@@ -1,0 +1,45 @@
+#homepage #hero {
+  background-color: #333;
+  /*
+  background: url(/img/cover.png) no-repeat center center;
+  */
+  background-clip: border-box;
+  margin: 0;
+}
+
+#homepage #header {
+  background-color: none;
+  background: none;
+}
+
+#homepage #header .ui.menu .logo.item {
+  margin: -0.85714286em -1.14285714em;
+}
+
+#homepage #header .ui.menu .logo.image {
+  height: 2.5rem;
+}
+
+#homepage .sentence {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+#homepage cite {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  opacity: 0.5;
+  display: block;
+}
+
+#homepage cite:hover {
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+}
+

@@ -1,0 +1,84 @@
+---
+layout: global
+og_title: 首頁
+og_image: 
+css: /assets/homepage.css
+js: /assets/homepage.js
+---
+
+<main id="homepage">
+
+<section id="hero" class="ui inverted center aligned basic segment marginless">
+
+  {% include navbar.html %}
+
+  <div class="ui hidden section divider"></div>
+  <div class="ui stripe container">
+    <h2 class="ui inverted header">
+      <span class="sentence">Blulu Metrics</span>
+      <span class="sentence">...</span>
+    </h2>
+    <p>...</p>
+  </div>
+  <div class="ui stripe container">
+    <a class="ui huge teal button" href="/projects/admin">
+    ...
+    <i class="right arrow icon"></i></a>
+  </div>
+</section>
+
+<section id="about" class="ui vertical segment">
+  <div class="ui stripe container">
+    <div class="ui two column stackable grid">
+      <div class="column">
+        <h2 class="ui header"></h2>
+        <p></p>
+      </div>
+      <div class="center aligned column">
+        <img class="ui fluid image" src="" alt="">
+        <cite>
+        </cite>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="what_we_do" class="ui vertical segment">
+  <div class="ui stripe container">
+    <h2 class="ui header">...</h2>
+    <hr class="ui hidden divider" />
+    <div class="ui two column stackable divided grid">
+
+      {% for item in site.data.metrics %}
+      <div class="column">
+        <div class="ui divided relaxed items">
+          <div class="item">
+            <div class="image">
+              <i class="huge {{ item.icon }} icon bordered"></i>
+            </div>
+            <div class="content">
+              <h3 class="header">{{ item.title }}</h3>
+              <div class="description">
+                <p>
+                  {{ item.description }}
+                </p>
+              </div>
+              <div class="extra">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="ui center aligned stripe container">
+
+  </div>
+
+</section>
+
+</main>

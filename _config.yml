@@ -1,0 +1,4 @@
+source: .
+destination: _deploy
+config_url: https://etblue.github.io/blulu
+encoding: utf-8

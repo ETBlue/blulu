@@ -1,1 +1,6 @@
 # Blulu
+
+
+```
+jekyll serve
+```

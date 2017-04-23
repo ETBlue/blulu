@@ -1,0 +1,66 @@
+site:
+  name: "Blulu Metrics: A Schema For Deliberative Democracy And Information Technology Across"
+  name_tw: "Blulu 量表：從審議民主看資訊科技"
+  url: "https://etblue.github.io/blulu"
+project:
+  name: "Blulu Metrics"
+  name_tw: "Blulu 量表"
+  tagline:
+  tagline_tw:
+  description:
+  description_tw:
+  logo:
+  cover:
+author:
+  - name: "Chia-Hua Lu"
+    name_tw: "呂家華"
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    avatar:
+    profile:
+      - vendor: "twitter"
+        url: "https://twitter.com/chiahua0515"
+      - vendor: "facebook"
+        url: ""
+  - name: "ETBlue"
+    name_tw: "藍一婷"
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    avatar:
+    profile:
+      - vendor: "twitter"
+        url: "https://twitter.com/chiahua0515"
+      - vendor: "facebook"
+        url: ""
+contributor:
+  - name: "Tuiry Hsiao"
+    name_tw: "蕭煦平"
+    credit:
+      - "Illustration"
+    profile:
+      - vendor: "facebook"
+        url: ""
+  - name: "Peggy Lo"
+    name_tw: "羅佩琪"
+    credit:
+      - "Brain Storming"
+    profile:
+      - vendor: "facebook"
+        url: ""
+  - name: "Ming-Han Tsai"
+    name_tw: "蔡明翰"
+    credit:
+      - "Brain Storming"
+    profile:
+      - vendor: "facebook"
+        url: ""
+thanks:
+  - name: ""
+    name_tw: ""
+    url:
+
+

@@ -1,30 +1,17 @@
 site:
-  name: "Blulu Metrics: A Schema For Deliberative Democracy And Information Technology Across"
-  name_tw: "Blulu 量表：從審議民主看資訊科技"
+  name: "Blulu Metrics: A Rethink Of The Relationship Between Web Tools And Deliberative Democracy"
+  name_tw: Blulu 量表：重新思考網路工具與審議民主的關係
   url: "https://etblue.github.io/blulu"
+  image: "images/cover.png"
 project:
   name: "Blulu Metrics"
   name_tw: "Blulu 量表"
-  tagline: A Schema For The Relationship Between Web Tools And Deliberative Democracy
-  tagline_tw: 重新思考網路工具與審議民主之間的關係
-  description: "A framework describing the emerging relationship between public deliberation, participatory democracy and information technology. Developed by two mediators coming from complementary backgrounds: Chia-Hua Lü and ETBlue." 
-  description_tw: "兩位背景迥異的跨領域中介者：呂家華、藍一婷，一起嘗試拉出一組思考框架，分析公共審議、參與式民主與資訊科技之間的新興關係。"
+  tagline: A Rethink Of The Relationship Between Web Tools And Deliberative Democracy
+  tagline_tw: 重新思考網路工具與審議民主的關係
+  description: "Blulu is a framework describing the emerging relationship between public deliberation, participatory democracy and information technology. Named after last names of its co-authors: Chia-Hua Lü and ETBlue." 
+  description_tw: "Blulu 是一組思考框架，用以分析公共審議、參與式民主與資訊科技之間的新興關係。以兩位共同作者呂家華、藍一婷的姓氏來命名。"
   why: Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. The Taiwan Authority imported bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet, in no time, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed.
   why_tw: 自 2014 佔領立院後，數位民主風潮興起，台灣治理當局引進了許多新潮的線上與線下的參與工具，同時從公民科技社群網羅技術人才。但很快地，基於工具的洗白式開放隨之出現。為了指出暗面、激起大眾對洗白式開放的警覺，Blulu 量表就此誕生。
-  what:
-  what_tw:
-  how:
-  how_tw:
-  who:
-  who_tw:
-  history:
-    - Alpha version of Blulu was published at the end of 2015 in an event held for the Loomio team, hosted by Open Culture Foundation. It focused on describing the nature of public deliberation as well as the position of online tools in a deliberation event, taking Loomio for example.
-    - Beta version of Blulu was published in the middle of 2016 in G0V Summit, pointing out the outer and inner side of civic engagement for public policies.
-    - Gamma version is coming at 5/13 2017, providing thinking tools for open washing disclosure.
-  history_tw:
-    - Blulu 的 alpha 版本於 2015 年底一場開放文化基金會為了 Loomio 團隊來台而舉辦的活動中發佈，以 Loomio 為案例，描述公共審議的本質以及線上工具在其中的定位。
-    - Beta 版本於 2016 年中的零時政府峰會中發佈，指出公民參與政策制定的表面與裏面。
-    - Gamma 版本即將在 2017/5/13 發佈，提供辨別開放式洗白的思考工具。
   logo:
   cover:
   content:
@@ -36,16 +23,6 @@ project:
     - meter
     - spectrum
     - bricks
-  link:
-    why:
-      - title: Sunflower Movement
-        title_tw: 佔領立法院
-        url: 
-resource:
-  - name:
-    name_tw:
-    icon:
-    url:
 author:
   - name: "Chia-Hua Lü"
     name_tw: "呂家華"
@@ -92,8 +69,8 @@ artist:
 brainstormer:
   - name: "Peggy Lo"
     name_tw: "羅佩琪"
-    tagline: A planner, facilitator, listener, communicator and mediator with God blessed high EQ and a warm heart. An experienced worker in government and non-government as well as a open source contributor in g0v.tw community.
-    tagline_tw: 
+    tagline: A planner, facilitator, listener, communicator and mediator with blessed high EQ and a warm heart. An experienced worker in government and non-government as well as an open source contributor participated in g0v.tw community.
+    tagline_tw: 規劃師、主持人、中介者、聆聽者、溝通家，擁有受到祝福的高 EQ 及溫暖的心房。經驗豐富的政府及非政府工作人，同時也是參與台灣零時政府社群的開源專案貢獻者。
     link:
       - icon: "facebook f"
         color: "facebook"
@@ -108,9 +85,51 @@ brainstormer:
         color: "facebook"
         title: "Ming-Han Tsai"
         url: "https://www.facebook.com/minghan.tsai1"
-thanks:
-  - name: ""
-    name_tw: ""
-    url:
+thank:
+  - name: "Loomio"
+    name_tw: "Loomio"
+    url: "https://www.loomio.org/"
+  - name: "Open Culture Foundation"
+    name_tw: "開放文化基金會"
+    url: "http://ocf.tw/"
+  - name: "Taiwan Civil Service Innovation Coalition"
+    name_tw: "台灣公務革新力量聯盟"
+    url: "https://www.facebook.com/thinking4public/"
+  - name: "Whiski Tajfun"
+    name_tw: "張維志"
+    url: "https://www.facebook.com/TajfunInsulo"
 
+speech:
+  - name: Blulu Alpha Version - Part 1
+    name_tw: Blulu Alpha 版：上半場
+    description: Alpha version was published at the end of 2015 in an event held for the Loomio team, hosted by Open Culture Foundation. The first part focused on describing the nature of public deliberation.
+    description_tw: Alpha 版本於 2015 年底一場開放文化基金會為了 Loomio 團隊來台而舉辦的活動中發佈，上半場主要描述公共審議的本質。
+    slides: '<div style="position:relative;height:0;padding-bottom:56.25%;"><iframe src="//www.slideshare.net/slideshow/embed_code/key/fzt8L0JkJAk8Qd" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe></div><p class="right aligned"><strong><a href="//www.slideshare.net/luchiahua0515/20151209-blulu-part-1-deliberate-concept-web-applications-x-public-deliberation" title="20151209 Blulu - Part 1 : Deliberate Concept |Web Applications x Public Deliberation" target="_blank">20151209 Blulu - Part 1 : Deliberate Concept |Web Applications x Public Deliberation</a></strong> from <strong><a target="_blank" href="https://www.slideshare.net/chiahua">chiahua</a></strong></p>'
+    video: '<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/ljYsnbSOK7I?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>'
+  - name: Blulu Alpha Version - Part 2
+    name_tw: Blulu Alpha 版：下半場
+    description: The position of online tools was well explained in the second part, taking two similiar cases on the Loomio platform as examples for comparison.
+    description_tw: 下半場以 Loomio 平台上兩件相似的案例做比較，解釋線上工具在公共審議中的定位。
+    slides: '<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://docs.google.com/presentation/d/19GFnA_ecKmJRcNNrluilIEVByXmY4YAfOXYQmzwmJWY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="360" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" style="position:absolute;width:100%;height:100%;left:0"></iframe></div>'
+    video: '<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/EmvNTjZWaos?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>'
+  - name: Blulu Beta Version
+    name_tw: Blulu Beta 版
+    description: Beta version was published in the middle of 2016 in G0V Summit, pointing out the outer and inner side of civic engagement for public policies.
+    description_tw: Beta 版本於 2016 年中的零時政府峰會中發佈，指出公民參與政策制定的表面與裏面。
+    slides: '<div style="position:relative;height:0;padding-bottom:56.25%;"><iframe src="//www.slideshare.net/slideshow/embed_code/key/2EheV459PPWVAm" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe></div><p class="right aligned"><strong><a href="//www.slideshare.net/chiahua/x-x-x-62023806" title="政府 x 民間 x 網路 x 審議 一個中介者的觀察與思考" target="_blank">政府 x 民間 x 網路 x 審議 一個中介者的觀察與思考</a></strong> from <strong><a target="_blank" href="https://www.slideshare.net/chiahua">chiahua</a></strong></p>'
+    video: '<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/RJsvuh5-Djw?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>'
+  - name: Blulu Gamma Version
+    name_tw: Blulu Gamma 版
+    description: Gamma version is coming at 5/13 2017, providing thinking tools for open washing disclosure.
+    description_tw: Gamma 版本即將在 2017/5/13 發佈，提供辨別開放式洗白的思考工具。
+    slides: <p class="center aligned">To Be Published</p>
+    video: <p class="center aligned">To Be Published</p>
+
+painting:
+  - images/blulu-rushing.jpg
+  - images/blulu-teal-circle.png
+  - images/blulu-yellow-circle.png
+  - images/blulu-white-board.png
+  - images/blulu-fuck-world-cafe.png
+  - images/blulu-handsome.png
 

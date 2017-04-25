@@ -20,12 +20,14 @@
   margin-top: 0;
 }
 
-#homepage #hero .ui.basic.inverted.button {
+#homepage #hero .ui.basic.inverted.button,
+#homepage #footer .ui.basic.inverted.button {
   color: #fffbf0!important;
   box-shadow: 0 0 0 2px rgba(255,251,240,.5) inset!important;
 }
 
-#homepage #hero .ui.basic.inverted.button:hover {
+#homepage #hero .ui.basic.inverted.button:hover,
+#homepage #footer .ui.basic.inverted.button:hover {
   box-shadow: 0 0 0 2px rgba(255,251,240,1) inset!important;
 }
 

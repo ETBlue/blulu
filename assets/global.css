@@ -84,6 +84,10 @@ html, body, h1, h2, h3, h4, h5, h6, button {
   display: inline-block!important;
 }
 
+.ui.items>.item .extra>*:last-child {
+  margin-right: 0;
+}
+
 @media only screen and (max-width: 767px) {
 
 .right.aligned,

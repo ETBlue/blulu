@@ -1,9 +1,9 @@
 ---
 layout: global
-og_title: 首頁
-og_image: 
-css: ./assets/homepage.css
-js: ./assets/homepage.js
+og_title: Welcome
+og_image: images/cover.png
+css: assets/homepage.css
+js: assets/homepage.js
 ---
 
 <main id="homepage">
@@ -37,15 +37,21 @@ js: ./assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon idea"></i>
+        <i class="icon bomb"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
+        <h2 class="ui right aligned teal header logo">
+          Why is Blulu Developed
+        </h2>
         <div class="right aligned en">{{ site.data.meta.project.why }}</div>
       </div>
       <div class="column">
+        <h2 class="ui left aligned teal header logo">
+          為何開發 Blulu
+        </h2>
         <div class="left aligned tw">{{ site.data.meta.project.why_tw }}</div>
       </div>
     </div>
@@ -62,6 +68,9 @@ js: ./assets/homepage.js
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
+        <h2 class="ui right aligned teal header logo">
+          Versions Of Blulu
+        </h2>
         <div class="ui relaxed divided list">
         {% for item in site.data.meta.project.history %}
           <div class="right aligned en item">
@@ -71,6 +80,9 @@ js: ./assets/homepage.js
         </div>
       </div>
       <div class="column">
+        <h2 class="ui left aligned teal header logo">
+          Blulu 的版本
+        </h2>
         <div class="ui relaxed divided list">
         {% for item in site.data.meta.project.history_tw %}
           <div class="left aligned tw item">
@@ -87,16 +99,30 @@ js: ./assets/homepage.js
   <div class="ui stripe container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon map signs"></i>
+        <i class="icon puzzle"></i>
       </span>
     </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="ui right aligned teal header logo">
+          The Blulu Metrics Family
+        </h2>
+      </div>
+      <div class="column">
+        <h2 class="ui left aligned teal header logo">
+          Blulu 量表家族
+        </h2>
+      </div>
+    </div>
+    <hr class="ui divider" />
     <div class="ui divided relaxed items">
       {% for metric_id in site.data.meta.project.content %}
       {% assign item = site.data.metrics[metric_id] %}
       <div class="item">
         <div class="ui three column stackable grid">
           <div class="six wide column">
-            <h3 class="right aligned header">
+            <h3 class="right aligned header logo">
               {{ item.name }}
             </h3>
             <div class="right aligned meta en compact">
@@ -109,7 +135,7 @@ js: ./assets/homepage.js
             </div>
           </div>
           <div class="six wide column">
-            <h3 class="left aligned header">
+            <h3 class="left aligned header logo">
               {{ item.name_tw }}
             </h3>
             <div class="left aligned meta tw compact">
@@ -122,14 +148,224 @@ js: ./assets/homepage.js
     </div>
   </div>
 </section>
-<section id="about" class="section">
+
+<section id="resources" class="section">
   <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon map signs"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
-        <div class="">{{ site.data.meta.project.description }}</div>
+        <div class="right aligned en">
+        </div>
       </div>
       <div class="column">
-        <div class="tw">{{ site.data.meta.project.description_tw }}</div>
+        <div class="left aligned tw">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="author" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon write"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          Author
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.author %}
+          <div class="right aligned item">
+            <div class="content">
+              <h3 class="ui header en logo">
+                {{ person.name }}
+              </h3>
+              <p class="en compact">
+                {{ person.tagline }}
+              </p>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          作者
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.author %}
+          <div class="left aligned item">
+            <div class="content">
+              <h3 class="ui header tw logo">
+                {{ person.name_tw }}
+              </h3>
+              <p class="tw compact">
+                {{ person.tagline_tw }}
+              </p>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="artist" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon paint brush"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          Artist
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.artist %}
+          <div class="right aligned item">
+            <div class="content">
+              <h3 class="ui header en logo">
+                {{ person.name }}
+              </h3>
+              <p class="en compact">
+                {{ person.tagline }}
+              </p>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          藝術家
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.artist %}
+          <div class="left aligned item">
+            <div class="content">
+              <h3 class="ui header tw logo">
+                {{ person.name_tw }}
+              </h3>
+              <p class="tw compact">
+                {{ person.tagline_tw }}
+              </p>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brainstormer" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon idea"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          Brainstormer
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.brainstormer %}
+          <div class="right aligned item">
+            <div class="content">
+              <h3 class="ui header en logo">
+                {{ person.name }}
+              </h3>
+              <p class="en compact">
+                {{ person.tagline }}
+              </p>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          鬼點子產生器
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.brainstormer %}
+          <div class="left aligned item">
+            <div class="content">
+              <h3 class="ui header tw logo">
+                {{ person.name_tw }}
+              </h3>
+              <p class="tw compact">
+                {{ person.tagline_tw }}
+              </p>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

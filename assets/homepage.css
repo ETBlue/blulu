@@ -30,12 +30,7 @@
 }
 
 #homepage .section {
-  padding: 1rem;
-}
-
-#homepage .icon.label {
-  position: relative;
-  z-index: 9;
+  padding: 1rem 0;
 }
 
 #homepage .levelone.ui.divided.grid:not([class*="vertically divided"])>.column:not(.row),
@@ -48,26 +43,18 @@
   box-shadow: none;
 }
 
-#homepage .ui.horizontal.divider:after, 
-#homepage .ui.horizontal.divider:before {
-  background-image: url(../images/horizontal-divider-bg.png);
-  background-repeat: repeat-x;
-  background-position: middle;
-}
-
-#homepage .ui.items>.item .header {
+#homepage #content .ui.items>.item .header {
   margin-bottom: 0;
 }
 
-#homepage .ui.dividing.header {
-  border-bottom: 1px #80cbc4 solid;
-}
-
-#homepage .ui.items>.item .ui.stackable.grid {
+#homepage #content .ui.items>.item .ui.stackable.grid {
   margin: 0!important;
   width: 100%;
 }
 
+#homepage #content .ui.image {
+  max-height: 6rem;
+}
 
 @media only screen and (max-width: 767px) {
 

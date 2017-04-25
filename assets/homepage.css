@@ -1,40 +1,71 @@
+
+#homepage {
+  background: #fffbf0;
+}
+
 #homepage #hero {
-  background-color: #333;
-  /*
-  background: url(/img/cover.png) no-repeat center center;
-  */
-  background-clip: border-box;
-  margin: 0;
+  color: #fffbf0!important;
+  font-size: 1.2rem;
 }
 
-#homepage #header {
-  background-color: none;
-  background: none;
+#homepage #hero .ui.pointing.below.basic.label {
+  color: #fffbf0;
+  background-color: #80cbc4;
+  border-color: #fffbf0;
+  font-family: "Oswald";
+  font-weight: normal;
 }
 
-#homepage #header .ui.menu .logo.item {
-  margin: -0.85714286em -1.14285714em;
+#homepage #hero h1 {
+  margin-top: 0;
 }
 
-#homepage #header .ui.menu .logo.image {
-  height: 2.5rem;
+#homepage #hero .ui.basic.inverted.button {
+  color: #fffbf0!important;
+  box-shadow: 0 0 0 2px rgba(255,251,240,.5) inset!important;
 }
 
-#homepage .sentence {
-  display: inline-block;
-  margin: 0 0.5em;
+#homepage #hero .ui.basic.inverted.button:hover {
+  box-shadow: 0 0 0 2px rgba(255,251,240,1) inset!important;
 }
 
-#homepage cite {
-  text-align: center;
-  font-size: 0.8rem;
-  line-height: 1.5em;
-  opacity: 0.5;
-  display: block;
+#homepage .section {
+  padding: 1rem;
 }
 
-#homepage cite:hover {
-  opacity: 1;
+#homepage .icon.label {
+  position: relative;
+  z-index: 9;
+}
+
+#homepage .levelone.ui.divided.grid:not([class*="vertically divided"])>.column:not(.row),
+#homepage .levelone.ui.divided.grid:not([class*="vertically divided"])>.row>.column {
+  box-shadow: -1px 0 0 0 #80cbc4;
+}
+
+#homepage .levelone.ui.divided.grid:not([class*="vertically divided"])>.column:first-child,
+#homepage .levelone.ui.divided.grid:not([class*="vertically divided"])>.row>.column:first-child {
+  box-shadow: none;
+}
+
+#homepage .ui.horizontal.divider:after, 
+#homepage .ui.horizontal.divider:before {
+  background-image: url(../images/horizontal-divider-bg.png);
+  background-repeat: repeat-x;
+  background-position: middle;
+}
+
+#homepage .ui.items>.item .header {
+  margin-bottom: 0;
+}
+
+#homepage .ui.dividing.header {
+  border-bottom: 1px #80cbc4 solid;
+}
+
+#homepage .ui.items>.item .ui.stackable.grid {
+  margin: 0!important;
+  width: 100%;
 }
 
 

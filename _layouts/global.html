@@ -54,18 +54,18 @@
   <meta name="twitter:title" content="{{ og_title }} | {{ sitename }}" />
   <title>{{ og_title }} | {{ sitename }}</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
 <!-- 替有實際內容的頁面套上 css -->
 
-  <link rel="stylesheet" href="./vendors/semantic/semantic.min.css"/>
+  <link rel="stylesheet" href="assets/vendors/semantic/semantic.min.css"/>
 
   {% if page.head %}
   <!-- 給所有頁面有額外新增 head 標籤的空間 -->
     {% include {{ page.head }} %}
   {% endif %}
 
-  <link rel="stylesheet" href="./assets/global.css"/>
+  <link rel="stylesheet" href="assets/global.css"/>
 
   {% if page.css %}
   <!-- 給所有頁面有額外新增 css 的空間 -->
@@ -89,9 +89,9 @@
 
   </div>
 
-  <script src="./vendors/jquery-3.2.1.min.js"></script>
-  <script src="./vendors/semantic/semantic.min.js"></script>
-  <script src="./assets/global.js"></script>
+  <script src="assets/vendors/jquery-3.2.1.min.js"></script>
+  <script src="assets/vendors/semantic/semantic.min.js"></script>
+  <script src="assets/global.js"></script>
 
   {% if page.script %}
     {% include {{ page.script }} %}

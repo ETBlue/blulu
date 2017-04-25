@@ -1,0 +1,55 @@
+name: Blulu’s Spectrum
+name_tw: Blulu 光譜
+nick: Where tech stands
+nick_tw: 技術的定位
+tagline: Technology neutrality under a political competition
+tagline_tw: 政治賽局下的技術中立主義
+description:
+description_tw:
+avatar: "images/metrics-spectrum.png"
+cover:
+content:
+  - name: Flipping
+    name_tw: 翻轉現狀
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: left end
+    color: grey
+    tag:
+      - background
+  - name: Force Balancing
+    name_tw: 平衡局勢
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: square
+    color: olive
+  - name: Equal Supply
+    name_tw: 等量供應
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: square
+    color: teal
+  - name: Casual
+    name_tw: 順其自然
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: square
+    color: blue
+  - name: Consolidating
+    name_tw: 鞏固現狀
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: right end
+    color: grey
+    tag:
+      - background

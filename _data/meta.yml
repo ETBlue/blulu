@@ -5,14 +5,44 @@ site:
 project:
   name: "Blulu Metrics"
   name_tw: "Blulu 量表"
-  tagline:
-  tagline_tw:
-  description:
-  description_tw:
+  tagline: A Schema For The Relationship Between Web Tools And Deliberative Democracy
+  tagline_tw: 重新思考網路工具與審議民主之間的關係
+  description: "A framework describing the emerging relationship between public deliberation, participatory democracy and information technology. Developed by two mediators coming from complementary backgrounds: Chia-Hua Lü and ETBlue." 
+  description_tw: "兩位背景迥異的跨領域中介者：呂家華、藍一婷，一起嘗試拉出一組思考框架，分析公共審議、參與式民主與資訊科技之間的新興關係。"
+  why: "Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. The Taiwan Authority imported bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet very soon, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed."
+  why_tw: "自 2014 佔領立院後，數位民主風潮興起，台灣治理當局引進了許多新潮的線上與線下的參與工具，同時從公民科技社群網羅技術人才。但很快地，基於工具的洗白式開放隨之出現。為了指出暗面、激起大眾對洗白式開放的警覺，Blulu 量表就此誕生。"
+  what:
+  what_tw:
+  how:
+  how_tw:
+  who:
+  who_tw:
+  history:
+    - Alpha version of Blulu was published at the end of 2015 in an event held for the Loomio team, hosted by Open Culture Foundation. It focused on describing the nature of public deliberation as well as the position of online tools in a deliberation event, taking Loomio for example.
+    - Beta version of Blulu was published in the middle of 2016 in G0V Summit, pointing out the inner and outer side of civic engagement for public policies.
+    - Gamma version is coming at 5/13 2017, providing thinking tools for open washing disclosure.
+  history_tw:
+    - Blulu 的 alpha 版本於 2015 年底一場開放文化基金會為了 Loomio 團隊來台而舉辦的活動中發佈，以 Loomio 為案例，描述公共審議的本質以及線上工具在其中的定位。
+    - Beta 版本於 2016 年中的零時政府峰會中發佈，指出公民參與政策制定的表面與裏面。
+    - Gamma 版本即將在 2017/5/13 發佈，提供辨別開放式洗白的思考工具。"
   logo:
   cover:
+  content:
+    - onion
+    - train
+    - stair
+    - iceberg
+    - pizza
+    - meter
+    - spectrum
+    - bricks
+  link:
+    why:
+      - title: Sunflower Movement
+        title_tw: 佔領立法院
+        url: 
 author:
-  - name: "Chia-Hua Lu"
+  - name: "Chia-Hua Lü"
     name_tw: "呂家華"
     tagline:
     tagline_tw:

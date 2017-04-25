@@ -1,0 +1,55 @@
+name: Blulu’s Onion
+name_tw: Blulu 洋蔥
+nick: Deliberation structure
+nick_tw: 審議的結構
+tagline: Anatomy of public deliberation
+tagline_tw: 公共審議的解剖構造
+description:
+description_tw:
+avatar: "images/metrics-onion.png"
+cover:
+content:
+  - name: Presentation
+    name_tw: 資訊呈現
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: circle
+    radius: 4
+    color: teal
+    tag:
+      - outer
+  - name: Modes
+    name_tw: 審議形式
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: circle
+    radius: 3
+    color: teal
+    tag:
+      - outer
+  - name: Facilitation
+    name_tw: 主持與彙整
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: circle
+    radius: 2
+    color: pink
+    tag:
+      - inner
+  - name: Political Context
+    name_tw: 政治脈絡
+    tagline:
+    tagline_tw:
+    description:
+    description_tw:
+    shape: circle
+    radius: 1
+    color: pink
+    tag:
+      - inner

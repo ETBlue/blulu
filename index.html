@@ -8,77 +8,131 @@ js: ./assets/homepage.js
 
 <main id="homepage">
 
-<section id="hero" class="ui inverted center aligned basic segment marginless">
-
-  {% include navbar.html %}
-
-  <div class="ui hidden section divider"></div>
-  <div class="ui stripe container">
-    <h2 class="ui inverted header">
-      <span class="sentence">Blulu Metrics</span>
-      <span class="sentence">...</span>
-    </h2>
-    <p>...</p>
+<section id="hero" class="ui teal inverted basic segment marginless">
+  <div class="ui center aligned double stripe container">
+    <span class="ui basic pointing below label">
+      gamma
+    </span>
+    <h1 class="ui huge inverted header logo">
+      {{ site.data.meta.project.name }}
+    </h1>
+    <p>
+      {{ site.data.meta.project.tagline }}
+      <br />
+      <span class="tw">
+      {{ site.data.meta.project.tagline_tw }}
+      </span>
+    </p>
   </div>
-  <div class="ui stripe container">
-    <a class="ui huge teal button" href="/projects/admin">
-    ...
-    <i class="right arrow icon"></i></a>
+  <div class="ui double stripe center aligned container">
+    <a class="ui icon labeled basic inverted button" href="">
+    All Resources / 所有資源
+    <i class="down arrow icon"></i></a>
   </div>
 </section>
 
-<section id="about" class="ui vertical segment">
-  <div class="ui stripe container">
-    <div class="ui two column stackable grid">
+<hr class="ui hidden divider" />
+
+<section id="why" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon idea"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
       <div class="column">
-        <h2 class="ui header"></h2>
-        <p></p>
+        <div class="right aligned en">{{ site.data.meta.project.why }}</div>
       </div>
-      <div class="center aligned column">
-        <img class="ui fluid image" src="" alt="">
-        <cite>
-        </cite>
+      <div class="column">
+        <div class="left aligned tw">{{ site.data.meta.project.why_tw }}</div>
       </div>
     </div>
   </div>
-
 </section>
 
-<section id="what_we_do" class="ui vertical segment">
-  <div class="ui stripe container">
-    <h2 class="ui header">...</h2>
+<section id="history" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon history"></i>
+      </span>
+    </div>
     <hr class="ui hidden divider" />
-    <div class="ui two column stackable divided grid">
-
-      {% for item in site.data.metrics %}
+    <div class="ui levelone two column divided stackable grid">
       <div class="column">
-        <div class="ui divided relaxed items">
-          <div class="item">
-            <div class="image">
-              <i class="huge {{ item.icon }} icon bordered"></i>
+        <div class="ui relaxed divided list">
+        {% for item in site.data.meta.project.history %}
+          <div class="right aligned en item">
+            {{ item }}
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui relaxed divided list">
+        {% for item in site.data.meta.project.history_tw %}
+          <div class="left aligned tw item">
+            {{ item }}
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="content">
+  <div class="ui stripe container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon map signs"></i>
+      </span>
+    </div>
+    <div class="ui divided relaxed items">
+      {% for metric_id in site.data.meta.project.content %}
+      {% assign item = site.data.metrics[metric_id] %}
+      <div class="item">
+        <div class="ui three column stackable grid">
+          <div class="six wide column">
+            <h3 class="right aligned header">
+              {{ item.name }}
+            </h3>
+            <div class="right aligned meta en compact">
+              {{ item.nick }} — {{ item.tagline }}
             </div>
-            <div class="content">
-              <h3 class="header">{{ item.title }}</h3>
-              <div class="description">
-                <p>
-                  {{ item.description }}
-                </p>
-              </div>
-              <div class="extra">
-              </div>
+          </div>
+          <div class="four wide column">
+            <div class="center aligned">
+              <img class="inline displayed ui image" src="{{ item.avatar }}">
+            </div>
+          </div>
+          <div class="six wide column">
+            <h3 class="left aligned header">
+              {{ item.name_tw }}
+            </h3>
+            <div class="left aligned meta tw compact">
+              {{ item.nick_tw }} —— {{ item.tagline_tw }}
             </div>
           </div>
         </div>
       </div>
       {% endfor %}
-
     </div>
   </div>
-
-  <div class="ui center aligned stripe container">
-
+</section>
+<section id="about" class="section">
+  <div class="ui container">
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <div class="">{{ site.data.meta.project.description }}</div>
+      </div>
+      <div class="column">
+        <div class="tw">{{ site.data.meta.project.description_tw }}</div>
+      </div>
+    </div>
   </div>
-
 </section>
 
 </main>

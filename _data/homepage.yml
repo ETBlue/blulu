@@ -53,5 +53,15 @@ question:
   title_tw: 提問
   link: footer
   icon: github
+license:
+  title: License
+  title_tw: 內容授權
+  link: license
+  icon: legal
+funding:
+  title: Funding
+  title_tw: 資金來源
+  link: funding
+  icon: dollar
 
 

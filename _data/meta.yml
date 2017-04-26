@@ -62,6 +62,10 @@ artist:
     tagline: A super talented illustrator creating adorable characters and paintings just like magic. An open art contributor participated in g0v.tw community.
     tagline_tw: 像是變魔術般創作出可愛角色與主視覺插圖的天才畫家，同時也是參與台灣零時政府社群的開放藝術貢獻者。
     link:
+      - icon: "twitter"
+        color: "twitter"
+        title: "tuiry //:..:"
+        url: "https://twitter.com/tu_hsiao"
       - icon: "facebook f"
         color: "facebook"
         title: "Tuiry Hsiao"

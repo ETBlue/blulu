@@ -59,31 +59,6 @@ js: assets/homepage.js
   </div>
 </section>
 
-<section id="why" class="section">
-  <div class="ui container">
-    <div class="center aligned">
-      <span class="ui massive circular basic teal icon label">
-        <i class="icon {{ site.data.homepage.why.icon }}"></i>
-      </span>
-    </div>
-    <hr class="ui hidden divider" />
-    <div class="ui levelone two column divided stackable grid">
-      <div class="column">
-        <h2 class="ui right aligned teal header logo">
-          {{ site.data.homepage.why.title }}
-        </h2>
-        <div class="right aligned en">{{ site.data.meta.project.why }}</div>
-      </div>
-      <div class="column">
-        <h2 class="ui left aligned teal header logo">
-          {{ site.data.homepage.why.title_tw }}
-        </h2>
-        <div class="left aligned tw">{{ site.data.meta.project.why_tw }}</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="speech" class="section">
   <div class="ui container">
     <div class="center aligned">
@@ -220,6 +195,31 @@ js: assets/homepage.js
       </div>
     </div>
     {% endfor %}
+  </div>
+</section>
+
+<section id="why" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.why.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="ui right aligned teal header logo">
+          {{ site.data.homepage.why.title }}
+        </h2>
+        <div class="right aligned en">{{ site.data.meta.project.why }}</div>
+      </div>
+      <div class="column">
+        <h2 class="ui left aligned teal header logo">
+          {{ site.data.homepage.why.title_tw }}
+        </h2>
+        <div class="left aligned tw">{{ site.data.meta.project.why_tw }}</div>
+      </div>
+    </div>
   </div>
 </section>
 

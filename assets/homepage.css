@@ -73,6 +73,12 @@ body: metrics
   max-height: 6rem;
 }
 
+#homepage .ui.column .ui.basic.label,
+#homepage .ui.list .ui.basic.label {
+  background: none!important;
+}
+
+
 @media only screen and (max-width: 767px) {
 
 

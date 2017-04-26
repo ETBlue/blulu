@@ -8,6 +8,8 @@ description:
 description_tw:
 avatar: "images/metrics-spectrum.png"
 cover:
+released:
+  - gamma
 content:
   - name: Flipping
     name_tw: 翻轉現狀

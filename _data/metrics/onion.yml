@@ -8,6 +8,9 @@ description:
 description_tw:
 avatar: "images/metrics-onion.png"
 cover:
+released:
+  - alpha
+  - beta
 content:
   - name: Presentation
     name_tw: 資訊呈現

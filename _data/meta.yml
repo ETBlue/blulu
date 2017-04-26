@@ -104,6 +104,29 @@ speech:
     name_tw: Blulu Alpha 版：上半場
     description: Alpha version was published at the end of 2015 in an event held for the Loomio team, hosted by Open Culture Foundation. The first part focused on describing the nature of public deliberation.
     description_tw: Alpha 版本於 2015 年底一場開放文化基金會為了 Loomio 團隊來台而舉辦的活動中發佈，上半場主要描述公共審議的本質。
+    toc:
+      - title: What does Blulu do
+        title_tw: Blulu 的功能與用途
+      - title: Me as a mediator
+        title_tw: 身為中介者的視角
+      - title: The role of online tools
+        title_tw: 線上工具扮演的角色
+      - title: Composition of deliberation versus process of a deliberation event
+        title_tw: 審議的組成與操作流程
+      - title: Composition 1. Presentation of information
+        title_tw: 審議組成一：資訊呈現
+      - title: Composition 2. Tools, modes and patterns
+        title_tw: 審議組成二：技巧、工具、與進行模式
+      - title: Composition 2-1. Different modes versus different stages of public policy life cycle
+        title_tw: 審議組成二之一：不同模式在不同政策生命週期中的應用
+      - title: Composition 2-2. Different modes versus different stages of public deliberation event
+        title_tw: 審議組成二之二：不同模式在不同審議活動進行階段中的應用
+      - title: Composition 3. Facilitation
+        title_tw: 審議組成三：主持討論
+      - title: Composition 4. Choices in different politic contexts
+        title_tw: 在不同政治脈絡下做選擇
+      - title: Three groups related to a public policy making
+        title_tw: 公共政策的三組關係人
     link:
       - title: Online collaborative document
         title_tw: 線上協作共筆
@@ -126,6 +149,15 @@ speech:
     name_tw: Blulu Alpha 版：下半場
     description: The position of online tools was well explained in the second part, taking two similiar cases on the Loomio platform as examples for comparison.
     description_tw: 下半場以 Loomio 平台上兩件相似的案例做比較，解釋線上工具在公共審議中的定位。
+    toc:
+      - title: Where Could Web Apps Help Us in Deliberation
+        title_tw: 網路工具可以應用在審議的哪裡
+      - title: Goals, Needs and Tools of Each Step of Deliberation
+        title_tw: 每個審議步驟的目標、需求與適用工具
+      - title: Where are Loomio and Their Cases in Blulu Concept
+        title_tw: Loomio 與相關案例的定位
+      - title: Some Thoughts
+        title_tw: 個人觀察
     link:
       - title: Online collaborative document
         title_tw: 線上協作共筆
@@ -154,6 +186,31 @@ speech:
     name_tw: Blulu Beta 版
     description: Beta version was published in the middle of 2016 in G0V Summit, pointing out the outer and inner side of civic engagement for public policies.
     description_tw: Beta 版本於 2016 年中的零時政府峰會中發佈，指出公民參與政策制定的表面與裏面。
+    toc:
+      - title: Who I am
+        title_tw: 自我介紹
+      - title: Adorable paintings from Tuiry Hsiao
+        title_tw: 阿平老師的可愛繪圖
+      - title: What does Blulu do
+        title_tw: Blulu 的用途
+      - title: Me as a mediator
+        title_tw: 身為中介者的視角
+      - title: Inner side, outer side, one-off and on-going pattern of deliberation in politics
+        title_tw: 審議在政治脈絡下的表與裏、炒作與永續
+      - title: History and trends of deliberation in Taiwan
+        title_tw: 台灣近年審議發展的歷史與趨勢
+      - title: Inner and outer of public policy life cycle
+        title_tw: 公共政策生命週期的表與裏
+      - title: Inner and outer of deliberation process
+        title_tw: 審議進行流程的表與裏
+      - title: Inner and outer of deliberation composition
+        title_tw: 審議組成本質的表與裏
+      - title: Examples
+        title_tw: 案例分析
+      - title: "Call to action: project planning hackathon for NGO"
+        title_tw: 採取行動：NGO 企畫松
+      - title: The roles of g0v hackathon and NGO planning hackathon
+        title_tw: NGO 企畫松與 g0v 黑客松的定位
     link:
       - title: Online collaborative document
         title_tw: 線上協作共筆
@@ -170,6 +227,15 @@ speech:
     name_tw: Blulu Gamma 版
     description: Gamma version is coming at 5/13 2017, providing thinking tools for open washing disclosure.
     description_tw: Gamma 版本即將在 2017/5/13 發佈，提供辨別開放式洗白的思考工具。
+    toc:
+      - title: "Which Force To Join: Technology Neutrality Under A Political Competition"
+        title_tw: 跳坑指南：政治賽局下的技術中立
+      - title: "How To Cowork: Halo Effect Across Domains"
+        title_tw: 挖坑指南：跨領域下的光暈效應
+      - title: "What To Observe: Open V.S. Open Washed"
+        title_tw: 觀坑指南：開放透明的表與裏
+      - title: Some Thoughts As An Ordinary Citizen
+        title_tw: 結語：身為普通公民
     slides_language:
       - Zh
       - En

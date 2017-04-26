@@ -8,3 +8,7 @@ description:
 description_tw:
 avatar: "images/metrics-stair.png"
 cover:
+released:
+  - alpha
+  - beta
+  - gamma

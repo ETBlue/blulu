@@ -8,3 +8,6 @@ description:
 description_tw:
 avatar: "images/metrics-pizza.png"
 cover:
+released:
+  - alpha
+  - gamma

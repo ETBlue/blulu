@@ -117,6 +117,13 @@ js: assets/homepage.js
             <div class="right aligned meta en compact">
               {{ item.nick }} — {{ item.tagline }}
             </div>
+            <p class="right aligned">
+              {% for version in item.released %}
+              <span class="ui basic horizontal teal tiny label">
+                {{ version }}
+              </span>
+              {% endfor %}
+            </p>
           </div>
           <div class="four wide column">
             <div class="center aligned">
@@ -130,6 +137,13 @@ js: assets/homepage.js
             <div class="left aligned meta tw compact">
               {{ item.nick_tw }} —— {{ item.tagline_tw }}
             </div>
+            <p class="left aligned">
+              {% for version in item.released %}
+              <span class="ui basic horizontal teal tiny label">
+                {{ version }}
+              </span>
+              {% endfor %}
+            </p>
           </div>
         </div>
       </div>
@@ -205,25 +219,74 @@ js: assets/homepage.js
         </div>
       </div>
     </div>
-    <h4 class="ui center aligned header logo">
-      Links / 相關連結
-    </h4>
-    <div class="ui center aligned relaxed celled list">
-      {% for item in speech.link %}
-      <div class="item">
-        <a target="_blank" href="{{ item.url }}">
-          {{ item.title }} / {{ item.title_tw }} 
-          {% for lang in item.language %}
-          <span class="ui horizontal basic black label logo mini">
-            {{ lang }}
-          </span>
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h4 class="right aligned ui header logo">
+          Table Of Content
+        </h4>
+        <div class="ui right aligned relaxed celled list">
+          {% for item in speech.toc %}
+          <div class="item">
+            {{ item.title }}
+          </div>
           {% endfor %}
-        </a>
+        </div>
       </div>
-      {% endfor %}
+      <div class="column">
+        <h4 class="left aligned ui header logo">
+          演講大綱
+        </h4>
+        <div class="ui left aligned relaxed celled list">
+          {% for item in speech.toc %}
+          <div class="item">
+            {{ item.title_tw }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
-    <hr class="ui hidden divider" />
-    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h4 class="right aligned ui header logo">
+          Links
+        </h4>
+        <div class="ui right aligned relaxed celled list">
+          {% for item in speech.link %}
+          <div class="item">
+            <a target="_blank" href="{{ item.url }}">
+              {{ item.title }}
+              {% for lang in item.language %}
+              <span class="ui horizontal basic black label logo mini">
+                {{ lang }}
+              </span>
+              {% endfor %}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <hr class="ui hidden divider" />
+      </div>
+      <div class="column">
+        <h4 class="left aligned ui header logo">
+          相關連結
+        </h4>
+        <div class="ui left aligned relaxed celled list">
+          {% for item in speech.link %}
+          <div class="item">
+            <a target="_blank" href="{{ item.url }}">
+              {{ item.title_tw }}
+              {% for lang in item.language %}
+              <span class="ui horizontal basic black label logo mini">
+                {{ lang }}
+              </span>
+              {% endfor %}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <hr class="ui hidden divider" />
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>
@@ -288,22 +351,47 @@ js: assets/homepage.js
         </iframe>
       </div>
     </div>
-    <h4 class="ui center aligned header logo">
-      Links / 相關連結
-    </h4>
-    <div class="ui center aligned relaxed celled list">
-      {% for item in site.data.meta.music.link %}
-      <div class="item">
-        <a target="_blank" href="{{ item.url }}">
-          {{ item.title }} / {{ item.title_tw }} 
-          {% for lang in item.language %}
-          <span class="ui horizontal basic black label logo mini">
-            {{ lang }}
-          </span>
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h4 class="right aligned ui header logo">
+          Links
+        </h4>
+        <div class="ui right aligned relaxed celled list">
+          {% for item in site.data.meta.music.link %}
+          <div class="item">
+            <a target="_blank" href="{{ item.url }}">
+              {{ item.title }}
+              {% for lang in item.language %}
+              <span class="ui horizontal basic black label logo mini">
+                {{ lang }}
+              </span>
+              {% endfor %}
+            </a>
+          </div>
           {% endfor %}
-        </a>
+        </div>
+        <hr class="ui hidden divider" />
       </div>
-      {% endfor %}
+      <div class="column">
+        <h4 class="left aligned ui header logo">
+          相關連結
+        </h4>
+        <div class="ui left aligned relaxed celled list">
+          {% for item in site.data.meta.music.link %}
+          <div class="item">
+            <a target="_blank" href="{{ item.url }}">
+              {{ item.title_tw }}
+              {% for lang in item.language %}
+              <span class="ui horizontal basic black label logo mini">
+                {{ lang }}
+              </span>
+              {% endfor %}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <hr class="ui hidden divider" />
+      </div>
     </div>
   </div>
 </section>

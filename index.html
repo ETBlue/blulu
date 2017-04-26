@@ -174,26 +174,50 @@ js: assets/homepage.js
         </p>
       </div>
     </div>
-    <hr class="ui divider" />
-    <div class="ui two column stackable grid">
-      <div class="column">
-        <h4 class="center aligned ui header logo">
-          Slides / 投影片
-        </h4>
-        {{ speech.slides }}
-      </div>
-      <div class="column">
-        <h4 class="center aligned ui header logo">
-          Video / 錄影
-        </h4>
-        {{ speech.video }}
-      </div>
+    <h4 class="center aligned ui header logo">
+      Video / 錄影
+      {% for lang in speech.video_language %}
+      <span class="ui basic black horizontal label">
+        {{ lang }}
+      </span>
+      {% endfor %}
+    </h4>
+    <div class="video container">
+      {{ speech.video }}
     </div>
-    <hr class="ui divider" />
+    <h4 class="center aligned ui header logo">
+      Slides / 投影片
+      {% for lang in speech.slides_language %}
+      <span class="ui basic black horizontal label">
+        {{ lang }}
+      </span>
+      {% endfor %}
+    </h4>
+    <div class="video container">
+      {{ speech.slides }}
+    </div>
+    <h4 class="ui center aligned header logo">
+      Links / 相關連結
+    </h4>
+    <div class="ui center aligned list">
+      {% for item in speech.link %}
+      <div class="item">
+        <a target="_blank" href="{{ item.url }}">
+          {{ item.title }} / {{ item.title_tw }} 
+          {% for lang in item.language %}
+          <span class="ui horizontal basic black label">
+            {{ lang }}
+          </span>
+          {% endfor %}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <hr class="ui hidden divider" />
+    <hr class="ui hidden divider" />
     {% endfor %}
   </div>
 </section>
-
 
 <section id="painting" class="section">
   <div class="ui container">
@@ -249,9 +273,28 @@ js: assets/homepage.js
       </div>
     </div>
     <hr class="ui hidden divider" />
-    <div style="position:relative;height:0;padding-bottom:56.25%">
-      <iframe src="https://www.youtube.com/embed/dV_Zn0igmY8?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen>
-      </iframe>
+    <div class="video container">
+      <div style="position:relative;height:0;padding-bottom:56.25%">
+        <iframe src="https://www.youtube.com/embed/dV_Zn0igmY8?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <h4 class="ui center aligned header logo">
+      Links / 相關連結
+    </h4>
+    <div class="ui center aligned list">
+      {% for item in site.data.meta.music.link %}
+      <div class="item">
+        <a target="_blank" href="{{ item.url }}">
+          {{ item.title }} / {{ item.title_tw }} 
+          {% for lang in item.language %}
+          <span class="ui horizontal basic black label">
+            {{ lang }}
+          </span>
+          {% endfor %}
+        </a>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>

@@ -50,6 +50,11 @@ html, body, h1, h2, h3, h4, h5, h6, button {
   margin: 1rem 0;
 }
 
+.video.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 .ui.double.stripe.container {
   margin: 2rem 0;
 }

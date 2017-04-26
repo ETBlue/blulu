@@ -108,6 +108,19 @@ fix semantic ui stuff
   padding-bottom: .42857143em;
 }
 
+@media only screen and (max-width: 767px) {
+
+.ui.stackable.celled.grid>.column:not(.row), 
+.ui.stackable.celled.grid>.row>.column, 
+.ui.stackable.divided:not(.vertically).grid>.column:not(.row), 
+.ui.stackable.divided:not(.vertically).grid>.row>.column {
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+  border-top: none;
+}
+
+}
+
 /*
 utilities
 */
@@ -160,6 +173,9 @@ for semantic ui sidebar
 #sidebar .ui.decorative.image {
   opacity: 0.9;
   margin-bottom: 0.5rem;
+}
+#sidebar .ui.decorative.image:hover {
+  opacity: 1;
 }
 
 #sidebar .ui.vertical.menu .item .icon,

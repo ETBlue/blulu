@@ -3,6 +3,11 @@ description:
   title_tw: 什麼是 Blulu 量表
   link: description
   icon: info
+speech:
+  title: Speeches
+  title_tw: 演講內容
+  link: speech
+  icon: unmute
 why:
   title: Why is Blulu Developed
   title_tw: 為何開發 Blulu
@@ -13,11 +18,6 @@ content:
   title_tw: Blulu 量表家族
   link: content
   icon: puzzle
-speech:
-  title: Speeches
-  title_tw: 演講內容
-  link: speech
-  icon: unmute
 painting:
   title: Paintings
   title_tw: 繪畫創作

@@ -48,11 +48,6 @@ thank:
   title_tw: 特別感謝
   link: thank
   icon: heart
-question:
-  title: Question
-  title_tw: 提問
-  link: footer
-  icon: github
 license:
   title: License
   title_tw: 內容授權
@@ -63,5 +58,10 @@ funding:
   title_tw: 資金來源
   link: funding
   icon: dollar
+question:
+  title: Question
+  title_tw: 提問
+  link: footer
+  icon: github
 
 

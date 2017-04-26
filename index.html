@@ -84,74 +84,6 @@ js: assets/homepage.js
   </div>
 </section>
 
-<section id="content">
-  <div class="ui stripe container">
-    <div class="center aligned">
-      <span class="ui massive circular basic teal icon label">
-        <i class="icon {{ site.data.homepage.content.icon }}"></i>
-      </span>
-    </div>
-    <hr class="ui hidden divider" />
-    <div class="ui levelone two column divided stackable grid">
-      <div class="column">
-        <h2 class="ui right aligned teal header logo">
-          {{ site.data.homepage.content.title }}
-        </h2>
-      </div>
-      <div class="column">
-        <h2 class="ui left aligned teal header logo">
-          {{ site.data.homepage.content.title_tw }}
-        </h2>
-      </div>
-    </div>
-    <hr class="ui divider" />
-    <div class="ui divided relaxed items">
-      {% for metric_id in site.data.meta.project.content %}
-      {% assign item = site.data.metrics[metric_id] %}
-      <div class="item">
-        <div class="ui three column stackable grid">
-          <div class="six wide column">
-            <h3 class="right aligned header logo">
-              {{ item.name }}
-            </h3>
-            <div class="right aligned meta en compact">
-              {{ item.nick }} — {{ item.tagline }}
-            </div>
-            <p class="right aligned">
-              {% for version in item.released %}
-              <span class="ui basic horizontal teal tiny label">
-                {{ version }}
-              </span>
-              {% endfor %}
-            </p>
-          </div>
-          <div class="four wide column">
-            <div class="center aligned">
-              <img class="inline displayed ui image" src="{{ item.avatar }}">
-            </div>
-          </div>
-          <div class="six wide column">
-            <h3 class="left aligned header logo">
-              {{ item.name_tw }}
-            </h3>
-            <div class="left aligned meta tw compact">
-              {{ item.nick_tw }} —— {{ item.tagline_tw }}
-            </div>
-            <p class="left aligned">
-              {% for version in item.released %}
-              <span class="ui basic horizontal teal tiny label">
-                {{ version }}
-              </span>
-              {% endfor %}
-            </p>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <section id="speech" class="section">
   <div class="ui container">
     <div class="center aligned">
@@ -288,6 +220,74 @@ js: assets/homepage.js
       </div>
     </div>
     {% endfor %}
+  </div>
+</section>
+
+<section id="content">
+  <div class="ui stripe container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.content.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="ui right aligned teal header logo">
+          {{ site.data.homepage.content.title }}
+        </h2>
+      </div>
+      <div class="column">
+        <h2 class="ui left aligned teal header logo">
+          {{ site.data.homepage.content.title_tw }}
+        </h2>
+      </div>
+    </div>
+    <hr class="ui divider" />
+    <div class="ui divided relaxed items">
+      {% for metric_id in site.data.meta.project.content %}
+      {% assign item = site.data.metrics[metric_id] %}
+      <div class="item">
+        <div class="ui three column stackable grid">
+          <div class="six wide column">
+            <h3 class="right aligned header logo">
+              {{ item.name }}
+            </h3>
+            <div class="right aligned meta en compact">
+              {{ item.nick }} — {{ item.tagline }}
+            </div>
+            <p class="right aligned">
+              {% for version in item.released %}
+              <span class="ui basic horizontal teal tiny label">
+                {{ version }}
+              </span>
+              {% endfor %}
+            </p>
+          </div>
+          <div class="four wide column">
+            <div class="center aligned">
+              <img class="inline displayed ui image" src="{{ item.avatar }}">
+            </div>
+          </div>
+          <div class="six wide column">
+            <h3 class="left aligned header logo">
+              {{ item.name_tw }}
+            </h3>
+            <div class="left aligned meta tw compact">
+              {{ item.nick_tw }} —— {{ item.tagline_tw }}
+            </div>
+            <p class="left aligned">
+              {% for version in item.released %}
+              <span class="ui basic horizontal teal tiny label">
+                {{ version }}
+              </span>
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 

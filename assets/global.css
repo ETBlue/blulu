@@ -1,3 +1,7 @@
+/*
+general
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 html, body {
@@ -8,6 +12,17 @@ html, body {
 html, body, h1, h2, h3, h4, h5, h6, button {
   font-family: "Lato", "Noto sans", "Helvetica Neue", Arial, Helvetica, '微軟正黑體', 'Microsoft JhengHei', sans-serif;
 }
+
+[data-toggle="sidebar"] {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
+}
+
+/*
+text
+*/
 
 .logo {
   font-family: "Oswald"!important;
@@ -34,20 +49,16 @@ html, body, h1, h2, h3, h4, h5, h6, button {
   color: #fffbf0!important;
 }
 
-.decorative.image {
-  opacity: 0.7;
-}
-
-.ui.marginless.segment {
-  margin: 0;
-}
-
-.ui.paddingless.segment {
-  padding: 0;
-}
+/*
+containers
+*/
 
 .ui.stripe.container {
   margin: 1rem 0;
+}
+
+.ui.double.stripe.container {
+  margin: 2rem 0;
 }
 
 .video.container {
@@ -55,14 +66,50 @@ html, body, h1, h2, h3, h4, h5, h6, button {
   margin: 0 auto;
 }
 
-.ui.double.stripe.container {
-  margin: 2rem 0;
+.ui.container {
+  width: 100%;
+  max-width: 1200px!important;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+@media only screen and (max-width: 767px) {
+
+.ui.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+}
+
+/*
+fix semantic ui stuff
+*/
 
 .ui.icon.label .icon {
   margin: 0;
   width: 1em;
   height: 1em;
+}
+
+.ui.items>.item .extra>*:last-child {
+  margin-right: 0;
+}
+
+.ui.list>.item .label {
+  margin-left: 0.5em;
+}
+
+/*
+utilities
+*/
+
+.ui.marginless.segment {
+  margin: 0;
+}
+
+.ui.paddingless.segment {
+  padding: 0;
 }
 
 .floated.left {
@@ -89,10 +136,6 @@ html, body, h1, h2, h3, h4, h5, h6, button {
   display: inline-block!important;
 }
 
-.ui.items>.item .extra>*:last-child {
-  margin-right: 0;
-}
-
 @media only screen and (max-width: 767px) {
 
 .right.aligned,
@@ -102,57 +145,38 @@ html, body, h1, h2, h3, h4, h5, h6, button {
 
 }
 
-.vertical.padding {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+/*
+for semantic ui sidebar
+*/
+
+#sidebar .ui.decorative.image {
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
 }
 
-.horizontal.padding {
-  padding-left: 1rem;
-  padding-right: 1rem;
+#sidebar .ui.vertical.menu .item .icon,
+#sidebar .ui.vertical.menu .item a {
+  color: #fffbf0;
+}
+#sidebar .ui.vertical.menu .item .icon {
+  opacity: 0.5;
+}
+#sidebar .ui.vertical.menu .item a {
+  opacity: 0.8;
+}
+#sidebar .ui.vertical.menu .item:hover .icon {
+  opacity: 0.8;
+}
+#sidebar .ui.vertical.menu .item:hover a {
+  opacity: 1;
+}
+#sidebar .ui.vertical.menu .item>i.icon {
+  margin: 1em 0 0 0.5em;
 }
 
-/* for container */
-
-.ui.container {
-  width: 100%;
-  max-width: 1200px!important;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media only screen and (max-width: 767px) {
-
-.ui.container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-}
-
-/* for semantic ui sidebar */
-
-#header .ui.menu .item[data-display="mobile"] {
-  display: none;
-  margin-right: -1.14285714em;
-}
-
-#header .ui.menu .item[data-display="mobile"] i.icon {
-  margin-right: 0;
-}
-@media only screen and (max-width: 767px) {
-
-#header .ui.menu .item[data-display="desktop"] {
-  display: none;
-}
-
-#header .ui.menu .item[data-display="mobile"] {
-  display: block;
-}
-
-}
-
-/* for semantic ui sidebar on ios */
+/*
+for semantic ui sidebar on ios
+*/
 
 html.ios {
   overflow-x: hidden;

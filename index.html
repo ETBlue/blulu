@@ -27,6 +27,9 @@ js: assets/homepage.js
     All resources / 所有資源
     <i class="down arrow icon"></i></a>
   </div>
+  <div class="ui teal icon button" data-toggle="sidebar">
+    <i class="icon content"></i>
+  </div>
 </header>
 
 <hr class="ui hidden divider" />
@@ -35,20 +38,20 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon info"></i>
+        <i class="icon {{ site.data.homepage.description.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="ui right aligned teal header logo">
-          What is Blulu Metrics
+          {{ site.data.homepage.description.title }}
         </h2>
         <div class="right aligned en">{{ site.data.meta.project.description }}</div>
       </div>
       <div class="column">
         <h2 class="ui left aligned teal header logo">
-          什麼是 Blulu 量表
+          {{ site.data.homepage.description.title_tw }}
         </h2>
         <div class="left aligned tw">{{ site.data.meta.project.description_tw }}</div>
       </div>
@@ -60,20 +63,20 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon bomb"></i>
+        <i class="icon {{ site.data.homepage.why.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="ui right aligned teal header logo">
-          Why is Blulu Developed
+          {{ site.data.homepage.why.title }}
         </h2>
         <div class="right aligned en">{{ site.data.meta.project.why }}</div>
       </div>
       <div class="column">
         <h2 class="ui left aligned teal header logo">
-          為何開發 Blulu
+          {{ site.data.homepage.why.title_tw }}
         </h2>
         <div class="left aligned tw">{{ site.data.meta.project.why_tw }}</div>
       </div>
@@ -85,19 +88,19 @@ js: assets/homepage.js
   <div class="ui stripe container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon puzzle"></i>
+        <i class="icon {{ site.data.homepage.content.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="ui right aligned teal header logo">
-          The Blulu Metrics Family
+          {{ site.data.homepage.content.title }}
         </h2>
       </div>
       <div class="column">
         <h2 class="ui left aligned teal header logo">
-          Blulu 量表家族
+          {{ site.data.homepage.content.title_tw }}
         </h2>
       </div>
     </div>
@@ -139,19 +142,19 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon unmute"></i>
+        <i class="icon {{ site.data.homepage.speech.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="right aligned ui teal header logo">
-          Speeches
+          {{ site.data.homepage.speech.title }}
         </h2>
       </div>
       <div class="column">
         <h2 class="left aligned ui teal header logo">
-          演講內容
+          {{ site.data.homepage.speech.title_tw }}
         </h2>
       </div>
     </div>
@@ -174,38 +177,44 @@ js: assets/homepage.js
         </p>
       </div>
     </div>
-    <h4 class="center aligned ui header logo">
-      Video / 錄影
-      {% for lang in speech.video_language %}
-      <span class="ui basic black horizontal label">
-        {{ lang }}
-      </span>
-      {% endfor %}
-    </h4>
-    <div class="video container">
-      {{ speech.video }}
-    </div>
-    <h4 class="center aligned ui header logo">
-      Slides / 投影片
-      {% for lang in speech.slides_language %}
-      <span class="ui basic black horizontal label">
-        {{ lang }}
-      </span>
-      {% endfor %}
-    </h4>
-    <div class="video container">
-      {{ speech.slides }}
+    <div class="ui two column stackable grid">
+      <div class="column">
+        <h4 class="center aligned ui header logo">
+          Video / 錄影
+          {% for lang in speech.video_language %}
+          <span class="ui horizontal basic black label tiny">
+            {{ lang }}
+          </span>
+          {% endfor %}
+        </h4>
+        <div class="video container">
+          {{ speech.video }}
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="center aligned ui header logo">
+          Slides / 投影片
+          {% for lang in speech.slides_language %}
+          <span class="ui horizontal basic black label tiny">
+            {{ lang }}
+          </span>
+          {% endfor %}
+        </h4>
+        <div class="video container">
+          {{ speech.slides }}
+        </div>
+      </div>
     </div>
     <h4 class="ui center aligned header logo">
       Links / 相關連結
     </h4>
-    <div class="ui center aligned list">
+    <div class="ui center aligned relaxed celled list">
       {% for item in speech.link %}
       <div class="item">
         <a target="_blank" href="{{ item.url }}">
           {{ item.title }} / {{ item.title_tw }} 
           {% for lang in item.language %}
-          <span class="ui horizontal basic black label">
+          <span class="ui horizontal basic black label logo mini">
             {{ lang }}
           </span>
           {% endfor %}
@@ -223,19 +232,19 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon image"></i>
+        <i class="icon {{ site.data.homepage.painting.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="right aligned ui teal header logo">
-          Paintings
+          {{ site.data.homepage.painting.title }}
         </h2>
       </div>
       <div class="column">
         <h2 class="left aligned ui teal header logo">
-          繪畫創作
+          {{ site.data.homepage.painting.title_tw }}
         </h2>
       </div>
     </div>
@@ -256,19 +265,19 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon music"></i>
+        <i class="icon {{ site.data.homepage.music.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="right aligned ui teal header logo">
-          Theme Music
+          {{ site.data.homepage.music.title }}
         </h2>
       </div>
       <div class="column">
         <h2 class="left aligned ui teal header logo">
-          主題曲
+          {{ site.data.homepage.music.title_tw }}
         </h2>
       </div>
     </div>
@@ -282,13 +291,13 @@ js: assets/homepage.js
     <h4 class="ui center aligned header logo">
       Links / 相關連結
     </h4>
-    <div class="ui center aligned list">
+    <div class="ui center aligned relaxed celled list">
       {% for item in site.data.meta.music.link %}
       <div class="item">
         <a target="_blank" href="{{ item.url }}">
           {{ item.title }} / {{ item.title_tw }} 
           {% for lang in item.language %}
-          <span class="ui horizontal basic black label">
+          <span class="ui horizontal basic black label logo mini">
             {{ lang }}
           </span>
           {% endfor %}
@@ -303,14 +312,14 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon write"></i>
+        <i class="icon {{ site.data.homepage.author.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="right aligned ui teal header logo">
-          Author
+          {{ site.data.homepage.author.title }}
         </h2>
         <div class="ui divided items">
           {% for person in site.data.meta.author %}
@@ -337,7 +346,7 @@ js: assets/homepage.js
       </div>
       <div class="column">
         <h2 class="left aligned ui teal header logo">
-          作者
+          {{ site.data.homepage.author.title_tw }}
         </h2>
         <div class="ui divided items">
           {% for person in site.data.meta.author %}
@@ -370,14 +379,14 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon paint brush"></i>
+        <i class="icon {{ site.data.homepage.artist.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="right aligned ui teal header logo">
-          Artist
+          {{ site.data.homepage.artist.title }}
         </h2>
         <div class="ui divided items">
           {% for person in site.data.meta.artist %}
@@ -404,7 +413,7 @@ js: assets/homepage.js
       </div>
       <div class="column">
         <h2 class="left aligned ui teal header logo">
-          藝術家
+          {{ site.data.homepage.artist.title_tw }}
         </h2>
         <div class="ui divided items">
           {% for person in site.data.meta.artist %}
@@ -437,14 +446,14 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon idea"></i>
+        <i class="icon {{ site.data.homepage.brainstormer.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="right aligned ui teal header logo">
-          Brainstormer
+          {{ site.data.homepage.brainstormer.title }}
         </h2>
         <div class="ui divided items">
           {% for person in site.data.meta.brainstormer %}
@@ -471,7 +480,7 @@ js: assets/homepage.js
       </div>
       <div class="column">
         <h2 class="left aligned ui teal header logo">
-          鬼點子產生器
+          {{ site.data.homepage.brainstormer.title_tw }}
         </h2>
         <div class="ui divided items">
           {% for person in site.data.meta.brainstormer %}
@@ -504,14 +513,14 @@ js: assets/homepage.js
   <div class="ui container">
     <div class="center aligned">
       <span class="ui massive circular basic teal icon label">
-        <i class="icon heart"></i>
+        <i class="icon {{ site.data.homepage.thank.icon }}"></i>
       </span>
     </div>
     <hr class="ui hidden divider" />
     <div class="ui levelone two column divided stackable grid">
       <div class="column">
         <h2 class="right aligned ui teal header logo">
-          Special Thanks
+          {{ site.data.homepage.thank.title }}
         </h2>
         <div class="ui divided relaxed list">
           {% for link in site.data.meta.thank %}
@@ -525,7 +534,7 @@ js: assets/homepage.js
       </div>
       <div class="column">
         <h2 class="left aligned ui teal header logo">
-          特別感謝
+          {{ site.data.homepage.thank.title_tw }}
         </h2>
         <div class="ui divided relaxed list">
           {% for link in site.data.meta.thank %}

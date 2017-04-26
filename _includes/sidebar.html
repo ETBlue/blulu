@@ -1,0 +1,15 @@
+<div id="sidebar">
+  <img class="ui decorative image" src="{{ site.data.meta.site.image }}">
+  <div class="ui vertical fluid inverted menu">
+  {% for item in site.data.homepage %}
+  <div class="item">
+    <i class="icon {{ item[1].icon }}"></i>
+    <a class="logo" href="#{{ item[1].link }}">
+      {{ item[1].title }}
+      <br />
+      {{ item[1].title_tw }}
+    </a>
+  </div>
+  {% endfor %}
+  </div>
+</div>

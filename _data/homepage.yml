@@ -1,0 +1,57 @@
+description:
+  title: What is Blulu Metrics
+  title_tw: 什麼是 Blulu 量表
+  link: description
+  icon: info
+why:
+  title: Why is Blulu Developed
+  title_tw: 為何開發 Blulu
+  link: why
+  icon: bomb
+content:
+  title: The Blulu Metrics Family
+  title_tw: Blulu 量表家族
+  link: content
+  icon: puzzle
+speech:
+  title: Speeches
+  title_tw: 演講內容
+  link: speech
+  icon: unmute
+painting:
+  title: Paintings
+  title_tw: 繪畫創作
+  link: painting
+  icon: image
+music:
+  title: Theme Music
+  title_tw: 主題曲
+  link: music
+  icon: music
+author:
+  title: Author
+  title_tw: 作者
+  link: author
+  icon: write
+artist:
+  title: Artist
+  title_tw: 藝術家
+  link: artist
+  icon: paint brush
+brainstormer:
+  title: Brainstormer
+  title_tw: 鬼點子產生器
+  link: brainstormer
+  icon: idea
+thank:
+  title: Special Thanks
+  title_tw: 特別感謝
+  link: thank
+  icon: heart
+question:
+  title: Question
+  title_tw: 提問
+  link: footer
+  icon: github
+
+

@@ -1,7 +1,14 @@
+/*
+general
+*/
 
 #homepage {
   background: #fffbf0;
 }
+
+/*
+header
+*/
 
 #homepage #hero {
   color: #fffbf0!important;
@@ -31,6 +38,10 @@
   box-shadow: 0 0 0 2px rgba(255,251,240,1) inset!important;
 }
 
+/*
+body
+*/
+
 #homepage .section {
   padding: 1rem 0;
 }
@@ -44,6 +55,10 @@
 #homepage .levelone.ui.divided.grid:not([class*="vertically divided"])>.row>.column:first-child {
   box-shadow: none;
 }
+
+/*
+body: metrics
+*/
 
 #homepage #content .ui.items>.item .header {
   margin-bottom: 0;

@@ -62,8 +62,10 @@ containers
 }
 
 .video.container {
-  max-width: 720px;
   margin: 0 auto;
+  position:relative;
+  height:0;
+  padding-bottom:56.25%;
 }
 
 .ui.container {

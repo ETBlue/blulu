@@ -218,22 +218,26 @@ speech:
         label: Speaker
         label_tw: 講者
     toc:
-      - title: Where Could Web Apps Help Us in Deliberation
+      - title: Who I am
+        title_tw: 自我介紹
+        timestamp: 0:52
+        label: "52"
+      - title: Where could web apps help us in deliberation
         title_tw: 網路工具可以應用在審議的哪裡
-        timestamp: 
-        label: 
-      - title: Goals, Needs and Tools of Each Step of Deliberation
+        timestamp: 1:22
+        label: "1:22"
+      - title: Goals, needs and tools of each step of deliberation
         title_tw: 每個審議步驟的目標、需求與適用工具
-        timestamp: 
-        label: 
-      - title: Where are Loomio and Their Cases in Blulu Concept
+        timestamp: 4:50
+        label: "4:50"
+      - title: Where are loomio and their cases in blulu concept
         title_tw: Loomio 與相關案例的定位
-        timestamp: 
-        label: 
-      - title: Some Thoughts
+        timestamp: 8:03
+        label: "8:03"
+      - title: Some thoughts
         title_tw: 個人觀察
-        timestamp: 
-        label: 
+        timestamp: 13:20
+        label: "13:20"
     link:
       - title: Online collaborative document
         title_tw: 線上協作共筆
@@ -345,26 +349,26 @@ speech:
     video_language:
       - Zh
     slides: '<iframe src="//www.slideshare.net/slideshow/embed_code/key/2EheV459PPWVAm" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe>'
-    video: '<iframe id="video_beta" enablejsapi="true" src="https://www.youtube.com/embed/RJsvuh5?enablejsapi=1-Djw" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    video: '<iframe id="video_beta" enablejsapi="true" src="https://www.youtube.com/embed/RJsvuh5-Djw?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
     toc_id: beta
   - name: Blulu Gamma Version
     name_tw: Blulu Gamma 版
     description: Gamma version is coming at 5/13 2017, providing thinking tools for open washing disclosure.
     description_tw: Gamma 版本即將在 2017/5/13 發佈，提供辨別開放式洗白的思考工具。
     toc:
-      - title: "Which Force To Join: Technology Neutrality Under A Political Competition"
+      - title: "Which force to join: technology neutrality under a political competition"
         title_tw: 跳坑指南：政治賽局下的技術中立
         timestamp: 
         label: 
-      - title: "How To Cowork: Halo Effect Across Domains"
+      - title: "How to cowork: halo effect across domains"
         title_tw: 挖坑指南：跨領域下的光暈效應
         timestamp: 
         label: 
-      - title: "What To Observe: Open V.S. Open Washed"
+      - title: "What to observe: open v.s. open washed"
         title_tw: 觀坑指南：開放透明的表與裏
         timestamp: 
         label: 
-      - title: Some Thoughts As An Ordinary Citizen
+      - title: Some thoughts as an ordinary citizen
         title_tw: 結語：身為普通公民
         timestamp: 
         label: 

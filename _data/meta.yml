@@ -139,26 +139,52 @@ speech:
     toc:
       - title: What does Blulu do
         title_tw: Blulu 的功能與用途
+        timestamp: 1:01
+        label: "1:01"
+      - title: Who I am
+        title_tw: 自我介紹
+        timestamp: 2:14
+        label: "2:14"
       - title: My point of view as a mediator
         title_tw: 身為中介者的視角
+        timestamp: 3:53
+        label: "3:53"
       - title: The role of online tools
         title_tw: 線上工具扮演的角色
+        timestamp: 4:50
+        label: "4:50"
       - title: Composition of deliberation versus process of a deliberation event
         title_tw: 審議的組成與操作流程
+        timestamp: 5:44
+        label: "5:44"
       - title: Composition 1. Presentation of information
         title_tw: 審議組成一：資訊呈現
+        timestamp: 8:22
+        label: "8:22"
       - title: Composition 2. Tools, modes and patterns
         title_tw: 審議組成二：技巧、工具、與進行模式
+        timestamp: 12:20
+        label: "12:20"
       - title: Composition 2-1. Different modes versus different stages of public policy life cycle
         title_tw: 審議組成二之一：不同模式在不同政策生命週期中的應用
+        timestamp: 13:53
+        label: "13:53"
       - title: Composition 2-2. Different modes versus different stages of public deliberation event
         title_tw: 審議組成二之二：不同模式在不同審議活動進行階段中的應用
+        timestamp: 20:06
+        label: "20:06"
       - title: Composition 3. Facilitation
         title_tw: 審議組成三：主持討論
+        timestamp: 22:01
+        label: "22:01"
       - title: Composition 4. Choices in different politic contexts
         title_tw: 在不同政治脈絡下做選擇
+        timestamp: 22:46
+        label: "22:46"
       - title: Three groups related to a public policy making
         title_tw: 公共政策的三組關係人
+        timestamp: 23:25
+        label: "23:25"
     link:
       - title: Online collaborative document
         title_tw: 線上協作共筆
@@ -176,7 +202,8 @@ speech:
     video_language:
       - Zh
     slides: '<iframe src="//www.slideshare.net/slideshow/embed_code/key/fzt8L0JkJAk8Qd" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe>'
-    video: '<iframe src="https://www.youtube.com/embed/ljYsnbSOK7I?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    video: '<iframe id="video_alpha1" enablejsapi="true" src="https://www.youtube.com/embed/ljYsnbSOK7I?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    toc_id: alpha1
   - name: Blulu Alpha Version - Part 2
     name_tw: Blulu Alpha 版：下半場
     description: The position of online tools was well explained in the second part, taking two similiar cases on the Loomio platform as examples for comparison.
@@ -193,12 +220,20 @@ speech:
     toc:
       - title: Where Could Web Apps Help Us in Deliberation
         title_tw: 網路工具可以應用在審議的哪裡
+        timestamp: 
+        label: 
       - title: Goals, Needs and Tools of Each Step of Deliberation
         title_tw: 每個審議步驟的目標、需求與適用工具
+        timestamp: 
+        label: 
       - title: Where are Loomio and Their Cases in Blulu Concept
         title_tw: Loomio 與相關案例的定位
+        timestamp: 
+        label: 
       - title: Some Thoughts
         title_tw: 個人觀察
+        timestamp: 
+        label: 
     link:
       - title: Online collaborative document
         title_tw: 線上協作共筆
@@ -222,7 +257,8 @@ speech:
     video_language:
       - Zh
     slides: '<iframe src="https://docs.google.com/presentation/d/19GFnA_ecKmJRcNNrluilIEVByXmY4YAfOXYQmzwmJWY/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" style="position:absolute;width:100%;height:100%;left:0"></iframe>'
-    video: '<iframe src="https://www.youtube.com/embed/EmvNTjZWaos?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    video: '<iframe id="video_alpha2" enablejsapi="true" src="https://www.youtube.com/embed/EmvNTjZWaos?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    toc_id: alpha2
   - name: Blulu Beta Version
     name_tw: Blulu Beta 版
     description: Beta version was published in the middle of 2016 in G0V Summit, pointing out the outer and inner side of civic engagement for public policies.
@@ -252,28 +288,52 @@ speech:
     toc:
       - title: Who I am
         title_tw: 自我介紹
+        timestamp: 
+        label: 
       - title: Adorable paintings from Tuiry Hsiao
         title_tw: 阿平老師的可愛繪圖
+        timestamp: 
+        label: 
       - title: What does Blulu do
         title_tw: Blulu 的用途
+        timestamp: 
+        label: 
       - title: Me as a mediator
         title_tw: 身為中介者的視角
+        timestamp: 
+        label: 
       - title: Inner side, outer side, one-off and on-going pattern of deliberation in politics
         title_tw: 審議在政治脈絡下的表與裏、炒作與永續
+        timestamp: 
+        label: 
       - title: History and trends of deliberation in Taiwan
         title_tw: 台灣近年審議發展的歷史與趨勢
+        timestamp: 
+        label: 
       - title: Inner and outer of public policy life cycle
         title_tw: 公共政策生命週期的表與裏
+        timestamp: 
+        label: 
       - title: Inner and outer of deliberation process
         title_tw: 審議進行流程的表與裏
+        timestamp: 
+        label: 
       - title: Inner and outer of deliberation composition
         title_tw: 審議組成本質的表與裏
+        timestamp: 
+        label: 
       - title: Examples
         title_tw: 案例分析
+        timestamp: 
+        label: 
       - title: "Call to action: project planning hackathon for NGO"
         title_tw: 採取行動：NGO 企畫松
+        timestamp: 
+        label: 
       - title: The roles of g0v hackathon and NGO planning hackathon
         title_tw: NGO 企畫松與 g0v 黑客松的定位
+        timestamp: 
+        label: 
     link:
       - title: Online collaborative document
         title_tw: 線上協作共筆
@@ -285,7 +345,8 @@ speech:
     video_language:
       - Zh
     slides: '<iframe src="//www.slideshare.net/slideshow/embed_code/key/2EheV459PPWVAm" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe>'
-    video: '<iframe src="https://www.youtube.com/embed/RJsvuh5-Djw?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    video: '<iframe id="video_beta" enablejsapi="true" src="https://www.youtube.com/embed/RJsvuh5?enablejsapi=1-Djw" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    toc_id: beta
   - name: Blulu Gamma Version
     name_tw: Blulu Gamma 版
     description: Gamma version is coming at 5/13 2017, providing thinking tools for open washing disclosure.
@@ -293,12 +354,20 @@ speech:
     toc:
       - title: "Which Force To Join: Technology Neutrality Under A Political Competition"
         title_tw: 跳坑指南：政治賽局下的技術中立
+        timestamp: 
+        label: 
       - title: "How To Cowork: Halo Effect Across Domains"
         title_tw: 挖坑指南：跨領域下的光暈效應
+        timestamp: 
+        label: 
       - title: "What To Observe: Open V.S. Open Washed"
         title_tw: 觀坑指南：開放透明的表與裏
+        timestamp: 
+        label: 
       - title: Some Thoughts As An Ordinary Citizen
         title_tw: 結語：身為普通公民
+        timestamp: 
+        label: 
     slides_language:
       - Zh
       - En
@@ -306,6 +375,7 @@ speech:
       - Zh
     slides: <p class="center aligned">To Be Published</p>
     video: <p class="center aligned">To Be Published</p>
+    toc_id: gamma
 
 painting:
   - images/blulu-rushing.jpg

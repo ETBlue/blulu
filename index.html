@@ -189,11 +189,16 @@ js: assets/homepage.js
         <h4 class="right aligned ui header logo">
           Table Of Content
         </h4>
-        <div class="ui right aligned relaxed celled list">
+        <div data-toc_id="{{ speech.toc_id }}" class="ui right aligned relaxed celled list">
           {% for item in speech.toc %}
-          <div class="item">
-            {{ item.title }}
-          </div>
+          <a data-timestamp="{{ item.timestamp | floor }}" class="item">
+            <span class="ui basic grey horizontal tiny label leading">
+              {{ item.label }}
+            </span>
+            <span>
+              {{ item.title }}
+            </span>
+          </a>
           {% endfor %}
         </div>
       </div>
@@ -201,11 +206,16 @@ js: assets/homepage.js
         <h4 class="left aligned ui header logo">
           演講大綱
         </h4>
-        <div class="ui left aligned relaxed celled list">
+        <div data-toc_id="{{ speech.toc_id }}" class="ui left aligned relaxed celled list">
           {% for item in speech.toc %}
-          <div class="item">
-            {{ item.title_tw }}
-          </div>
+          <a data-timestamp="{{ item.timestamp | floor }}" class="item">
+            <span class="ui basic grey horizontal tiny label leading">
+              {{ item.label }}
+            </span>
+            <span>
+              {{ item.title_tw }}
+            </span>
+          </a>
           {% endfor %}
         </div>
       </div>

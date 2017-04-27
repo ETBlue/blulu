@@ -10,7 +10,7 @@ project:
   tagline_tw: 重新思考網路工具與審議民主的關係
   description: "Blulu is a framework describing the emerging relationship between public deliberation, participatory democracy and information technology. Named after last names of its co-authors: Chia-Hua Lü and ETBlue." 
   description_tw: "Blulu 是一組思考框架，用以分析公共審議、參與式民主與資訊科技之間的新興關係。以兩位共同作者呂家華、藍一婷的姓氏來命名。"
-  why: Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. the Taiwan Authority imported bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet, in no time, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed.
+  why: Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. The Taiwan Authority imported bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet, in no time, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed.
   why_tw: 自 2014 佔領立院後，數位民主風潮興起，台灣治理當局引進了許多新潮的線上與線下的參與工具，同時從公民科技社群網羅技術人才。但很快地，基於工具的洗白式開放隨之出現。為了指出暗面、激起大眾對洗白式開放的警覺，Blulu 量表就此誕生。
   logo:
   cover:
@@ -106,7 +106,7 @@ thank:
 speech:
   - name: Blulu Alpha Version - Part 1
     name_tw: Blulu Alpha 版：上半場
-    description: Alpha version was published at the end of 2015 in an event held for the Loomio team, hosted by Open Culture Foundation. the first part focused on describing the nature of public deliberation.
+    description: Alpha version was published at the end of 2015 in an event held for the Loomio team, hosted by Open Culture Foundation. The first part focused on describing the nature of public deliberation.
     description_tw: Alpha 版本於 2015 年底一場開放文化基金會為了 Loomio 團隊來台而舉辦的活動中發佈，上半場主要描述公共審議的本質。
     title: "Web Applications x Public Deliberation"
     title_tw: 網路應用 x 公共審議
@@ -141,7 +141,7 @@ speech:
         title_tw: Blulu 的功能與用途
       - title: My point of view as a mediator
         title_tw: 身為中介者的視角
-      - title: the role of online tools
+      - title: The role of online tools
         title_tw: 線上工具扮演的角色
       - title: Composition of deliberation versus process of a deliberation event
         title_tw: 審議的組成與操作流程
@@ -179,7 +179,7 @@ speech:
     video: '<iframe src="https://www.youtube.com/embed/ljYsnbSOK7I?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
   - name: Blulu Alpha Version - Part 2
     name_tw: Blulu Alpha 版：下半場
-    description: the position of online tools was well explained in the second part, taking two similiar cases on the Loomio platform as examples for comparison.
+    description: The position of online tools was well explained in the second part, taking two similiar cases on the Loomio platform as examples for comparison.
     description_tw: 下半場以 Loomio 平台上兩件相似的案例做比較，解釋線上工具在公共審議中的定位。
     title: "Web Applications x Public Deliberation"
     title_tw: 網路應用 x 公共審議
@@ -272,7 +272,7 @@ speech:
         title_tw: 案例分析
       - title: "Call to action: project planning hackathon for NGO"
         title_tw: 採取行動：NGO 企畫松
-      - title: the roles of g0v hackathon and NGO planning hackathon
+      - title: The roles of g0v hackathon and NGO planning hackathon
         title_tw: NGO 企畫松與 g0v 黑客松的定位
     link:
       - title: Online collaborative document

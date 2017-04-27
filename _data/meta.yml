@@ -112,6 +112,13 @@ speech:
     title_tw: 網路應用 x 公共審議
     subtitle: "Part 1 : Deliberation Concept"
     subtitle_tw: 上半場：審議概念篇
+    slides_language:
+      - Zh
+    video_language:
+      - Zh
+    slides: '<iframe src="//www.slideshare.net/slideshow/embed_code/key/fzt8L0JkJAk8Qd" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe>'
+    video: '<iframe id="video_alpha1" enablejsapi="true" src="https://www.youtube.com/embed/ljYsnbSOK7I?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    toc_id: alpha1
     meta:
       - title: December 09, 2015
         title_tw: 2015 年 12 月 9 日
@@ -137,8 +144,8 @@ speech:
         label: Speaker
         label_tw: 講者
     toc:
-      - title: What does Blulu do
-        title_tw: Blulu 的功能與用途
+      - title: Topics for this session
+        title_tw: 本場內容
         timestamp: 1:01
         label: "1:01"
       - title: Who I am
@@ -197,13 +204,6 @@ speech:
         url: https://www.facebook.com/luchiahua0515/posts/10153441102061026
         language:
           - Zh
-    slides_language:
-      - Zh
-    video_language:
-      - Zh
-    slides: '<iframe src="//www.slideshare.net/slideshow/embed_code/key/fzt8L0JkJAk8Qd" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe>'
-    video: '<iframe id="video_alpha1" enablejsapi="true" src="https://www.youtube.com/embed/ljYsnbSOK7I?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
-    toc_id: alpha1
   - name: Blulu Alpha Version - Part 2
     name_tw: Blulu Alpha 版：下半場
     description: The position of online tools was well explained in the second part, taking two similiar cases on the Loomio platform as examples for comparison.
@@ -212,6 +212,14 @@ speech:
     title_tw: 網路應用 x 公共審議
     subtitle: "Part 2 : Web Applications"
     subtitle_tw: 下半場：網路工具篇
+    slides_language:
+      - Zh
+      - En
+    video_language:
+      - Zh
+    slides: '<iframe src="https://docs.google.com/presentation/d/19GFnA_ecKmJRcNNrluilIEVByXmY4YAfOXYQmzwmJWY/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" style="position:absolute;width:100%;height:100%;left:0"></iframe>'
+    video: '<iframe id="video_alpha2" enablejsapi="true" src="https://www.youtube.com/embed/EmvNTjZWaos?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    toc_id: alpha2
     meta:
       - title: ETBlue
         title_tw: 藍一婷
@@ -255,14 +263,6 @@ speech:
         url: https://etblue.blogspot.tw/2015/12/loomio-20-blulu.html
         language:
           - Zh
-    slides_language:
-      - Zh
-      - En
-    video_language:
-      - Zh
-    slides: '<iframe src="https://docs.google.com/presentation/d/19GFnA_ecKmJRcNNrluilIEVByXmY4YAfOXYQmzwmJWY/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" style="position:absolute;width:100%;height:100%;left:0"></iframe>'
-    video: '<iframe id="video_alpha2" enablejsapi="true" src="https://www.youtube.com/embed/EmvNTjZWaos?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
-    toc_id: alpha2
   - name: Blulu Beta Version
     name_tw: Blulu Beta 版
     description: Beta version was published in the middle of 2016 in G0V Summit, pointing out the outer and inner side of civic engagement for public policies.
@@ -271,6 +271,13 @@ speech:
     title_tw: 政府 x 民間 x 網路 x 審議
     subtitle: "Observations and Reflections of a Mediator"
     subtitle_tw: 一個中介者的觀察與思考
+    slides_language:
+      - Zh
+    video_language:
+      - Zh
+    slides: '<iframe src="//www.slideshare.net/slideshow/embed_code/key/2EheV459PPWVAm" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe>'
+    video: '<iframe id="video_beta" enablejsapi="true" src="https://www.youtube.com/embed/esBQ0OIu-cw?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    toc_id: beta
     meta:
       - title: May 15, 2016
         title_tw: 2016 年 5 月 15 日
@@ -290,71 +297,69 @@ speech:
         label: Speaker
         label_tw: 講者
     toc:
-      - title: Who I am
-        title_tw: 自我介紹
-        timestamp: 
-        label: 
-      - title: Adorable paintings from Tuiry Hsiao
-        title_tw: 阿平老師的可愛繪圖
-        timestamp: 
-        label: 
-      - title: What does Blulu do
-        title_tw: Blulu 的用途
-        timestamp: 
-        label: 
-      - title: Me as a mediator
+      - title: Who I am + adorable paintings from Tuiry Hsiao
+        title_tw: 自我介紹 + 阿平老師的可愛繪圖
+        timestamp: 1:00
+        label: "1:00"
+      - title: Topics for this session
+        title_tw: 本場內容
+        timestamp: 2:34
+        label: "2:34"
+      - title: My points of view as a mediator
         title_tw: 身為中介者的視角
-        timestamp: 
-        label: 
-      - title: Inner side, outer side, one-off and on-going pattern of deliberation in politics
-        title_tw: 審議在政治脈絡下的表與裏、炒作與永續
-        timestamp: 
-        label: 
+        timestamp: 3:13
+        label: "3:13"
       - title: History and trends of deliberation in Taiwan
         title_tw: 台灣近年審議發展的歷史與趨勢
-        timestamp: 
-        label: 
-      - title: Inner and outer of public policy life cycle
+        timestamp: 4:42
+        label: "4:42"
+      - title: The concept of inners and outers
+        title_tw: 表與裏的概念
+        timestamp: 11:41
+        label: "11:41"
+      - title: Inners and outers of public policy life cycle
         title_tw: 公共政策生命週期的表與裏
-        timestamp: 
-        label: 
-      - title: Inner and outer of deliberation process
+        timestamp: 13:09
+        label: "13:09"
+      - title: Inners and outers of deliberation process
         title_tw: 審議進行流程的表與裏
-        timestamp: 
-        label: 
-      - title: Inner and outer of deliberation composition
+        timestamp: 15:38
+        label: "15:38"
+      - title: Inners and outers of deliberation composition
         title_tw: 審議組成本質的表與裏
-        timestamp: 
-        label: 
-      - title: Examples
-        title_tw: 案例分析
-        timestamp: 
-        label: 
+        timestamp: 23:09
+        label: "23:09"
+      - title: Different situations in government and non-government
+        title_tw: 政府與民間的狀態差異
+        timestamp: 23:42
+        label: "23:42"
       - title: "Call to action: project planning hackathon for NGO"
         title_tw: 採取行動：NGO 企畫松
-        timestamp: 
-        label: 
-      - title: The roles of g0v hackathon and NGO planning hackathon
-        title_tw: NGO 企畫松與 g0v 黑客松的定位
-        timestamp: 
-        label: 
+        timestamp: 26:38
+        label: "26:38"
+      - title: Questions and answers
+        title_tw: 問與答
+        timestamp: 28:40
+        label: "28:40"
     link:
       - title: Online collaborative document
         title_tw: 線上協作共筆
         url: https://g0v.hackpad.com/R0-Square-g0v-Summit-2016-2ldPbEHoVJ0#:h=政府-x-民間-x-網路-x-審議-一個中介者的觀察與思考-
         language:
           - Zh
-    slides_language:
-      - Zh
-    video_language:
-      - Zh
-    slides: '<iframe src="//www.slideshare.net/slideshow/embed_code/key/2EheV459PPWVAm" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;width:100%;height:100%;left:0;border:none;" allowfullscreen> </iframe>'
-    video: '<iframe id="video_beta" enablejsapi="true" src="https://www.youtube.com/embed/RJsvuh5-Djw?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
-    toc_id: beta
   - name: Blulu Gamma Version
     name_tw: Blulu Gamma 版
     description: Gamma version is coming at 5/13 2017, providing thinking tools for open washing disclosure.
     description_tw: Gamma 版本即將在 2017/5/13 發佈，提供辨別開放式洗白的思考工具。
+    slides_language:
+      - Zh
+      - En
+    video_language:
+      - Zh
+    slides: <p class="center aligned">To Be Published</p>
+    video: <p class="center aligned">To Be Published</p>
+    toc_id: gamma
+    meta:
     toc:
       - title: "Which force to join: technology neutrality under a political competition"
         title_tw: 跳坑指南：政治賽局下的技術中立
@@ -372,14 +377,7 @@ speech:
         title_tw: 結語：身為普通公民
         timestamp: 
         label: 
-    slides_language:
-      - Zh
-      - En
-    video_language:
-      - Zh
-    slides: <p class="center aligned">To Be Published</p>
-    video: <p class="center aligned">To Be Published</p>
-    toc_id: gamma
+    link:
 
 painting:
   - images/blulu-rushing.jpg

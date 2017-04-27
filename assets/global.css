@@ -97,7 +97,20 @@ fix semantic ui stuff
 }
 
 .ui.list>.item .label {
-  margin-left: 0.5em;
+  margin: 0 0 0 0.5em;
+}
+.ui.list>.item .label:first-child {
+  margin-left: 0;
+}
+
+.ui.horizontal.label, 
+.ui.horizontal.labels .label {
+  margin: 0 0 0 0.5em;
+}
+
+.ui.horizontal.label:first-child, 
+.ui.horizontal.labels .label:first-child {
+  margin-left: 0;
 }
 
 .ui.celled.relaxed.list>.item:first-child {

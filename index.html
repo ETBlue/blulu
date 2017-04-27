@@ -101,7 +101,9 @@ js: assets/homepage.js
     <div class="ui two column stackable grid">
       <div class="column">
         <h4 class="center aligned ui header logo">
-          Video / 錄影
+          <span>
+            Video / 錄影
+          </span>
           {% for lang in speech.video_language %}
           <span class="ui horizontal basic black label tiny">
             {{ lang }}
@@ -114,7 +116,9 @@ js: assets/homepage.js
       </div>
       <div class="column">
         <h4 class="center aligned ui header logo">
-          Slides / 投影片
+          <span>
+            Slides / 投影片
+          </span>
           {% for lang in speech.slides_language %}
           <span class="ui horizontal basic black label tiny">
             {{ lang }}
@@ -161,7 +165,9 @@ js: assets/homepage.js
           {% for item in speech.link %}
           <div class="item">
             <a target="_blank" href="{{ item.url }}">
-              {{ item.title }}
+              <span>
+                {{ item.title }}
+              </span>
               {% for lang in item.language %}
               <span class="ui horizontal basic black label logo mini">
                 {{ lang }}
@@ -180,7 +186,9 @@ js: assets/homepage.js
           {% for item in speech.link %}
           <div class="item">
             <a target="_blank" href="{{ item.url }}">
-              {{ item.title_tw }}
+              <span>
+                {{ item.title_tw }}
+              </span>
               {% for lang in item.language %}
               <span class="ui horizontal basic black label logo mini">
                 {{ lang }}
@@ -359,7 +367,9 @@ js: assets/homepage.js
           {% for item in site.data.meta.music.link %}
           <div class="item">
             <a target="_blank" href="{{ item.url }}">
-              {{ item.title }}
+              <span>
+                {{ item.title }}
+              </span>
               {% for lang in item.language %}
               <span class="ui horizontal basic black label logo mini">
                 {{ lang }}
@@ -378,7 +388,9 @@ js: assets/homepage.js
           {% for item in site.data.meta.music.link %}
           <div class="item">
             <a target="_blank" href="{{ item.url }}">
-              {{ item.title_tw }}
+              <span>
+                {{ item.title_tw }}
+              </span>
               {% for lang in item.language %}
               <span class="ui horizontal basic black label logo mini">
                 {{ lang }}

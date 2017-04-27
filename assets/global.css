@@ -98,21 +98,22 @@ fix semantic ui stuff
   margin-right: 0;
 }
 
-.ui.list>.item .label {
-  margin: 0 0 0 0.5em;
-}
-.ui.list>.item .label:first-child {
-  margin-left: 0;
-}
-
+.ui.list>.item .label,
 .ui.horizontal.label, 
 .ui.horizontal.labels .label {
   margin: 0 0 0 0.5em;
 }
 
+.ui.list>.item .label:first-child,
 .ui.horizontal.label:first-child, 
 .ui.horizontal.labels .label:first-child {
   margin-left: 0;
+}
+
+.ui.list>.item .label.leading,
+.ui.horizontal.label.leading, 
+.ui.horizontal.labels .label.leading {
+  margin-right: 0.5em;
 }
 
 .ui.celled.relaxed.list>.item:first-child {

@@ -109,7 +109,7 @@ js: assets/homepage.js
         <div class="ui right aligned relaxed celled list">
           {% for item in speech.meta %}
           <div class="item">
-            <span class="ui grey horizontal tiny label" style="margin-right: 0.5em;">
+            <span class="ui basic grey horizontal tiny label leading">
               {{ item.label }}
             </span>
             {% if item.url %}
@@ -135,7 +135,7 @@ js: assets/homepage.js
         <div class="ui left aligned relaxed celled list">
           {% for item in speech.meta %}
           <div class="item">
-            <span class="ui grey horizontal tiny label" style="margin-right: 0.5em;">
+            <span class="ui basic grey horizontal tiny label leading">
               {{ item.label_tw }}
             </span>
             {% if item.url %}
@@ -159,7 +159,7 @@ js: assets/homepage.js
             Video / 錄影
           </span>
           {% for lang in speech.video_language %}
-          <span class="ui horizontal basic black label tiny">
+          <span class="ui horizontal pink label tiny">
             {{ lang }}
           </span>
           {% endfor %}
@@ -174,7 +174,7 @@ js: assets/homepage.js
             Slides / 投影片
           </span>
           {% for lang in speech.slides_language %}
-          <span class="ui horizontal basic black label tiny">
+          <span class="ui horizontal pink label tiny">
             {{ lang }}
           </span>
           {% endfor %}
@@ -233,7 +233,7 @@ js: assets/homepage.js
                 {{ item.title }}
               </span>
               {% for lang in item.language %}
-              <span class="ui horizontal basic black label logo mini">
+              <span class="ui horizontal pink label logo mini">
                 {{ lang }}
               </span>
               {% endfor %}
@@ -254,7 +254,7 @@ js: assets/homepage.js
                 {{ item.title_tw }}
               </span>
               {% for lang in item.language %}
-              <span class="ui horizontal basic black label logo mini">
+              <span class="ui horizontal pink label logo mini">
                 {{ lang }}
               </span>
               {% endfor %}
@@ -433,7 +433,7 @@ js: assets/homepage.js
                 {{ item.title }}
               </span>
               {% for lang in item.language %}
-              <span class="ui horizontal basic black label logo mini">
+              <span class="ui horizontal pink label logo mini">
                 {{ lang }}
               </span>
               {% endfor %}
@@ -454,7 +454,7 @@ js: assets/homepage.js
                 {{ item.title_tw }}
               </span>
               {% for lang in item.language %}
-              <span class="ui horizontal basic black label logo mini">
+              <span class="ui horizontal pink label logo mini">
                 {{ lang }}
               </span>
               {% endfor %}

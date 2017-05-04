@@ -3,7 +3,7 @@ site:
   name_tw: Blulu 量表：重新思考網路工具與審議民主的關係
   url: "http://blulu.tw"
   cover: "/images/cover.png"
-  icon: "/images/avatar.png"
+  icon: "/images/favicon.png"
 project:
   name: "Blulu Metrics"
   name_tw: "Blulu 量表"

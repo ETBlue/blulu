@@ -13,7 +13,7 @@
 <!-- 讓所有一般頁套用指定或預設的 og 素材 -->
 {% assign og_url = page.url %}
 
-{% assign og_image = site.data.meta.site.image %}
+{% assign og_image = site.data.meta.site.cover %}
 
 {% if page.lang == 'tw' %}
   {% assign og_description = site.data.meta.project.description_tw %}
@@ -33,14 +33,14 @@
   <meta property="og:description" content="{{ og_description}}" /> 
   <meta name="twitter:description" content="{{ og_description }}"/>
 
-  <meta property="og:image" content="{{ og_image }}" /> 
-  <meta name="twitter:image:src" content="{{ og_image }}" />
+  <meta property="og:image" content="{{ site.config_url }}{{ og_image }}" /> 
+  <meta name="twitter:image:src" content="{{ site.config_url }}{{ og_image }}" />
 
   <meta property="og:title" content="{{ sitename }}" />
   <meta name="twitter:title" content="{{ sitename }}" />
   <title>{{ sitename }}</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="images/blulu-teal-circle.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.config_url }}{{ site.data.meta.site.icon }}" />
 
 <!-- 替有實際內容的頁面套上 css -->
 

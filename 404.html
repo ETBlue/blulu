@@ -1,0 +1,784 @@
+---
+layout: global
+css: assets/homepage.css
+js: assets/homepage.js
+---
+
+<main id="homepage">
+
+<header id="hero" class="ui teal inverted basic segment marginless">
+  <div class="ui center aligned double stripe container">
+    <span class="ui basic pointing below label">
+      gamma
+    </span>
+    <h1 class="ui huge inverted header logo">
+      {{ site.data.meta.project.name }}
+    </h1>
+    <p>
+      {{ site.data.meta.project.tagline }}
+      <br />
+      <span class="tw">
+      {{ site.data.meta.project.tagline_tw }}
+      </span>
+    </p>
+  </div>
+  <div class="ui double stripe center aligned container">
+    <a href="#speech" class="ui icon labeled basic inverted button">
+    All speeches / 所有演講
+    <i class="down arrow icon"></i></a>
+  </div>
+  <div class="ui teal icon button" data-toggle="sidebar">
+    <i class="icon content"></i>
+  </div>
+</header>
+
+<hr class="ui hidden divider" />
+
+<section id="description" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.description.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="ui right aligned teal header logo">
+          {{ site.data.homepage.description.title }}
+        </h2>
+        <div class="right aligned en">{{ site.data.meta.project.description }}</div>
+      </div>
+      <div class="column">
+        <h2 class="ui left aligned teal header logo">
+          {{ site.data.homepage.description.title_tw }}
+        </h2>
+        <div class="left aligned tw">{{ site.data.meta.project.description_tw }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="speech" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.speech.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.speech.title }}
+        </h2>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.speech.title_tw }}
+        </h2>
+      </div>
+    </div>
+    {% for speech in site.data.meta.speech %}
+    <hr class="ui hidden divider" />
+    <div class="center aligned">
+      <span class="ui large circular basic teal icon label">
+        <i class="icon birthday"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h3 class="right aligned ui header logo">
+          {{ speech.name }}
+        </h3>
+        <p class="right aligned en">
+          {{ speech.description }}
+        </p>
+      </div>
+      <div class="column">
+        <h3 class="left aligned ui header logo">
+          {{ speech.name_tw }}
+        </h3>
+        <p class="left aligned tw">
+          {{ speech.description_tw }}
+        </p>
+      </div>
+    </div>
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h4 class="right aligned ui header logo">
+          {{ speech.title }}
+          <span class="sub header">
+            {{ speech.subtitle }}
+          </span>
+        </h4>
+        <div class="ui right aligned relaxed celled list">
+          {% for item in speech.meta %}
+          <div class="item">
+            <span class="ui basic grey horizontal tiny label leading">
+              {{ item.label }}
+            </span>
+            {% if item.url %}
+            <a target="_blank" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+            {% else %}
+            <span>
+              {{ item.title }}
+            </span>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="left aligned ui header logo">
+          {{ speech.title_tw }}
+          <span class="sub header">
+            {{ speech.subtitle_tw }}
+          </span>
+        </h4>
+        <div class="ui left aligned relaxed celled list">
+          {% for item in speech.meta %}
+          <div class="item">
+            <span class="ui basic grey horizontal tiny label leading">
+              {{ item.label_tw }}
+            </span>
+            {% if item.url %}
+            <a target="_blank" href="{{ item.url }}">
+              {{ item.title_tw }}
+            </a>
+            {% else %}
+            <span>
+              {{ item.title_tw }}
+            </span>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="ui two column stackable grid">
+      <div class="column">
+        <h4 class="center aligned ui header logo">
+          <span>
+            Video / 錄影
+          </span>
+          {% for lang in speech.video_language %}
+          <span class="ui horizontal pink label tiny">
+            {{ lang }}
+          </span>
+          {% endfor %}
+        </h4>
+        <div class="video container">
+          {{ speech.video }}
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="center aligned ui header logo">
+          <span>
+            Slides / 投影片
+          </span>
+          {% for lang in speech.slides_language %}
+          <span class="ui horizontal pink label tiny">
+            {{ lang }}
+          </span>
+          {% endfor %}
+        </h4>
+        <div class="video container">
+          {{ speech.slides }}
+        </div>
+      </div>
+    </div>
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h4 class="right aligned ui header logo">
+          Table Of Content
+        </h4>
+        <div data-toc_id="{{ speech.toc_id }}" class="ui right aligned relaxed celled list">
+          {% for item in speech.toc %}
+          <a data-timestamp="{{ item.timestamp | floor }}" class="item">
+            <span class="ui basic grey horizontal tiny label leading">
+              {{ item.label }}
+            </span>
+            <span>
+              {{ item.title }}
+            </span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="left aligned ui header logo">
+          演講大綱
+        </h4>
+        <div data-toc_id="{{ speech.toc_id }}" class="ui left aligned relaxed celled list">
+          {% for item in speech.toc %}
+          <a data-timestamp="{{ item.timestamp | floor }}" class="item">
+            <span class="ui basic grey horizontal tiny label leading">
+              {{ item.label }}
+            </span>
+            <span>
+              {{ item.title_tw }}
+            </span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h4 class="right aligned ui header logo">
+          Links
+        </h4>
+        <div class="ui right aligned relaxed celled list">
+          {% for item in speech.link %}
+          <div class="item">
+            <a target="_blank" href="{{ item.url }}">
+              <span>
+                {{ item.title }}
+              </span>
+              {% for lang in item.language %}
+              <span class="ui horizontal pink label logo mini">
+                {{ lang }}
+              </span>
+              {% endfor %}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="left aligned ui header logo">
+          相關連結
+        </h4>
+        <div class="ui left aligned relaxed celled list">
+          {% for item in speech.link %}
+          <div class="item">
+            <a target="_blank" href="{{ item.url }}">
+              <span>
+                {{ item.title_tw }}
+              </span>
+              {% for lang in item.language %}
+              <span class="ui horizontal pink label logo mini">
+                {{ lang }}
+              </span>
+              {% endfor %}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="why" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.why.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="ui right aligned teal header logo">
+          {{ site.data.homepage.why.title }}
+        </h2>
+        <div class="right aligned en">{{ site.data.meta.project.why }}</div>
+      </div>
+      <div class="column">
+        <h2 class="ui left aligned teal header logo">
+          {{ site.data.homepage.why.title_tw }}
+        </h2>
+        <div class="left aligned tw">{{ site.data.meta.project.why_tw }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="content">
+  <div class="ui stripe container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.content.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="ui right aligned teal header logo">
+          {{ site.data.homepage.content.title }}
+        </h2>
+      </div>
+      <div class="column">
+        <h2 class="ui left aligned teal header logo">
+          {{ site.data.homepage.content.title_tw }}
+        </h2>
+      </div>
+    </div>
+    <hr class="ui divider" />
+    <div class="ui divided relaxed items">
+      {% for metric_id in site.data.meta.project.content %}
+      {% assign item = site.data.metrics[metric_id] %}
+      <div class="item">
+        <div class="ui three column stackable grid">
+          <div class="six wide column">
+            <h3 class="right aligned header logo">
+              {{ item.name }}
+            </h3>
+            <div class="right aligned meta en compact">
+              {{ item.nick }} — {{ item.tagline }}
+            </div>
+            <p class="right aligned">
+              {% for version in item.released %}
+              <span class="ui basic horizontal teal tiny label">
+                {{ version }}
+              </span>
+              {% endfor %}
+            </p>
+          </div>
+          <div class="four wide column">
+            <div class="center aligned">
+              <img class="inline displayed ui image" src="{{ item.avatar }}">
+            </div>
+          </div>
+          <div class="six wide column">
+            <h3 class="left aligned header logo">
+              {{ item.name_tw }}
+            </h3>
+            <div class="left aligned meta tw compact">
+              {{ item.nick_tw }} —— {{ item.tagline_tw }}
+            </div>
+            <p class="left aligned">
+              {% for version in item.released %}
+              <span class="ui basic horizontal teal tiny label">
+                {{ version }}
+              </span>
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="painting" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.painting.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.painting.title }}
+        </h2>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.painting.title_tw }}
+        </h2>
+      </div>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui two column stackable grid">
+      {% for url in site.data.meta.painting %}
+      <div class="column">
+        <div class="center aligned ui segment">
+          <img class="ui image" src="{{ url }}" />
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="music" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.music.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.music.title }}
+        </h2>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.music.title_tw }}
+        </h2>
+      </div>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="video container">
+      <iframe src="https://www.youtube.com/embed/dV_Zn0igmY8" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen>
+      </iframe>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h4 class="right aligned ui header logo">
+          Links
+        </h4>
+        <div class="ui right aligned relaxed celled list">
+          {% for item in site.data.meta.music.link %}
+          <div class="item">
+            <a target="_blank" href="{{ item.url }}">
+              <span>
+                {{ item.title }}
+              </span>
+              {% for lang in item.language %}
+              <span class="ui horizontal pink label logo mini">
+                {{ lang }}
+              </span>
+              {% endfor %}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="left aligned ui header logo">
+          相關連結
+        </h4>
+        <div class="ui left aligned relaxed celled list">
+          {% for item in site.data.meta.music.link %}
+          <div class="item">
+            <a target="_blank" href="{{ item.url }}">
+              <span>
+                {{ item.title_tw }}
+              </span>
+              {% for lang in item.language %}
+              <span class="ui horizontal pink label logo mini">
+                {{ lang }}
+              </span>
+              {% endfor %}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="author" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.author.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.author.title }}
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.author %}
+          <div class="right aligned item">
+            <div class="content">
+              <h3 class="ui header logo">
+                {{ person.name }}
+              </h3>
+              <div class="meta en compact">
+                {{ person.tagline }}
+              </div>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.author.title_tw }}
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.author %}
+          <div class="left aligned item">
+            <div class="content">
+              <h3 class="ui header logo">
+                {{ person.name_tw }}
+              </h3>
+              <div class="tw compact meta">
+                {{ person.tagline_tw }}
+              </div>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="artist" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.artist.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.artist.title }}
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.artist %}
+          <div class="right aligned item">
+            <div class="content">
+              <h3 class="ui header logo">
+                {{ person.name }}
+              </h3>
+              <div class="meta en compact">
+                {{ person.tagline }}
+              </div>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.artist.title_tw }}
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.artist %}
+          <div class="left aligned item">
+            <div class="content">
+              <h3 class="ui header logo">
+                {{ person.name_tw }}
+              </h3>
+              <div class="tw compact meta">
+                {{ person.tagline_tw }}
+              </div>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brainstormer" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.brainstormer.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.brainstormer.title }}
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.brainstormer %}
+          <div class="right aligned item">
+            <div class="content">
+              <h3 class="ui header logo">
+                {{ person.name }}
+              </h3>
+              <div class="meta en compact">
+                {{ person.tagline }}
+              </div>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.brainstormer.title_tw }}
+        </h2>
+        <div class="ui divided items">
+          {% for person in site.data.meta.brainstormer %}
+          <div class="left aligned item">
+            <div class="content">
+              <h3 class="ui header logo">
+                {{ person.name_tw }}
+              </h3>
+              <div class="tw compact meta">
+                {{ person.tagline_tw }}
+              </div>
+              <div class="extra">
+                {% for link in person.link %}
+                <a target="_blank" href="{{ link.url }}" class="mini ui icon labeled {{ link.color }} button">
+                  <i class="icon {{ link.icon }}"></i>
+                  {{ link.title }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="thank" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.thank.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.thank.title }}
+        </h2>
+        <div class="ui divided relaxed list">
+          {% for link in site.data.meta.thank %}
+          <div class="right aligned item">
+            <a target="_blank" href="{{ link.url }}">
+              {{ link.name }}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.thank.title_tw }}
+        </h2>
+        <div class="ui divided relaxed list">
+          {% for link in site.data.meta.thank %}
+          <div class="left aligned item">
+            <a target="_blank" href="{{ link.url }}">
+              {{ link.name_tw }}
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="license" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.license.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.license.title }}
+        </h2>
+        <h3 class="ui right aligned header logo">Creative Commons License</h3>
+        <p class="en right aligned"><a href="http://blulu.tw">Blulu Metrics</a> by <a target="_blank" href="https://twitter.com/chiahua0515">Chia-Hua Lü</a>, <a target="_blank" href="https://twitter.com/etblue">ETBlue</a> is licensed under a <a target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. Permissions beyond the scope of this license may be available at <a target="_blank" href="https://github.com/ETBlue/Blulu/issues">https://github.com/ETBlue/Blulu/issues</a>.</p>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.license.title_tw }}
+        </h2>
+        <h3 class="ui left aligned header logo">創用 CC 授權條款</h3>
+        <p class="tw left aligned"><a href="http://blulu.tw">Blulu Metrics</a> 為 <a target="_blank" href="https://twitter.com/chiahua0515">呂家華</a> 與 <a target="_blank" href="https://twitter.com/etblue">藍一婷</a> 的共同著作，以 <a target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">創用 CC 姓名標示─非商業性 4.0 國際版授權</a> 釋出。授權範圍外的使用，請洽 <a target="_blank" href="https://github.com/ETBlue/Blulu/issues">https://github.com/ETBlue/Blulu/issues</a> 。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funding" class="section">
+  <div class="ui container">
+    <div class="center aligned">
+      <span class="ui massive circular basic teal icon label">
+        <i class="icon {{ site.data.homepage.funding.icon }}"></i>
+      </span>
+    </div>
+    <hr class="ui hidden divider" />
+    <div class="ui levelone two column divided stackable grid">
+      <div class="column">
+        <h2 class="right aligned ui teal header logo">
+          {{ site.data.homepage.funding.title }}
+        </h2>
+        <p class="en right aligned">
+          Blulu is self-funded and developed in spare time. If you want to support us, please spread the words and stand against open washing.
+        </p>
+      </div>
+      <div class="column">
+        <h2 class="left aligned ui teal header logo">
+          {{ site.data.homepage.funding.title_tw }}
+        </h2>
+        <p class="tw left aligned">
+          Blulu 是利用閒暇時間自掏腰包研發而成，如果支持我們，請廣傳上述內容，並起身對抗洗白式開放。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="ui hidden divider" />
+
+<footer id="footer" class="ui teal inverted basic segment marginless center aligned">
+  <a target="_blank" class="ui icon labeled tiny basic inverted button" href="https://github.com/etblue/blulu/issues">
+    <i class="icon github"></i>
+    Question / 發問
+  </a>
+</footer>
+
+</main>

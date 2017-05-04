@@ -1,7 +1,7 @@
 site:
   name: "Blulu Metrics: A Rethink of the Relationship Between Web Tools and Deliberative Democracy"
   name_tw: Blulu 量表：重新思考網路工具與審議民主的關係
-  url: "https://etblue.github.io/blulu"
+  url: "http://blulu.tw"
   image: "images/cover.png"
 project:
   name: "Blulu Metrics"

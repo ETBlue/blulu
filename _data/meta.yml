@@ -9,8 +9,8 @@ project:
   name_tw: "Blulu 量表"
   tagline: A Rethink of the Relationship Between Web Tools and Deliberative Democracy
   tagline_tw: 重新思考網路工具與審議民主的關係
-  description: "Blulu is a framework describing the emerging relationship between public deliberation, participatory democracy and information technology. Named after last names of its co-authors: Chia-Hua Lü and ETBlue." 
-  description_tw: "Blulu 是一組思考框架，用以分析公共審議、參與式民主與資訊科技之間的新興關係。以兩位共同作者呂家華、藍一婷的姓氏來命名。"
+  description: "Blulu is a framework describing the emerging relationship between deliberation, participation and information technology. Named after last names of its co-authors: Chia-Hua Lü and ETBlue." 
+  description_tw: "Blulu 是一組思考框架，用以分析審議、參與與資訊科技之間的新興關係。以兩位共同作者呂家華、藍一婷的姓氏來命名。"
   why: Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. The Taiwan Authority imported bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet, in no time, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed.
   why_tw: 自 2014 佔領立院後，數位民主風潮興起，台灣治理當局引進了許多新潮的線上與線下的參與工具，同時從公民科技社群網羅技術人才。但很快地，基於工具的洗白式開放隨之出現。為了指出暗面、激起大眾對洗白式開放的警覺，Blulu 量表就此誕生。
   logo:
@@ -27,8 +27,8 @@ project:
 author:
   - name: "Chia-Hua Lü"
     name_tw: "呂家華"
-    tagline: An experienced facilitator, planner, mediator, researcher and consultant diving into the professional field of public deliberation for more than ten years.
-    tagline_tw: 經驗深厚的審議主持人、規劃師、中介者、研究人員、以及顧問，在公共審議的領域中深耕十餘載的專業工作者。
+    tagline: An experienced facilitator, planner, mediator, researcher and consultant diving the professional fiion public deliberation for more than ten years.
+    tagline_tw: 經驗深厚的審議主持人、規劃師、中介者、研究人員、以及顧問，在審議的領域十餘載的專業工作者。
     description: 
     description_tw:
     avatar:

@@ -11,7 +11,7 @@ project:
   tagline_tw: 重新思考網路工具與審議民主的關係
   description: "Blulu is a framework describing the emerging relationship between public deliberation, participatory democracy and information technology. Named after last names of two co-authors: Chia-Hua Lü and ETBlue." 
   description_tw: "Blulu 是一組思考框架，用以分析公共審議、參與式民主與資訊科技之間的新興關係。以兩位共同作者呂家華、藍一婷的姓氏來命名。"
-  why: Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. The Taiwan Authority imported bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet, in no time, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed.
+  why: Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. The Taiwan Authority imported a bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet, in no time, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed.
   why_tw: 自 2014 佔領立院後，數位民主風潮興起，台灣治理當局引進了許多新潮的線上與線下的參與工具，同時從公民科技社群網羅技術人才。但很快地，基於工具的洗白式開放隨之出現。為了指出暗面、激起大眾對洗白式開放的警覺，Blulu 量表就此誕生。
   logo:
   cover:
@@ -43,7 +43,7 @@ author:
         url: "https://www.facebook.com/luchiahua0515"
   - name: "ETBlue"
     name_tw: "藍一婷"
-    tagline: A medical illustrator, business planner, web UI designer, web frontend engineer, singer songwriter and open source contributor participated in g0v.tw community.
+    tagline: A medical illustrator, business planner, web UI designer, web frontend engineer, singer-songwriter and open source contributor participated in g0v.tw community.
     tagline_tw: 醫學繪圖插畫家、商務企畫員、網站介面設計人、網頁前端工程師、創作歌手，參與台灣零時政府社群的開源貢獻者。
     description:
     description_tw:

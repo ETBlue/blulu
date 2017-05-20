@@ -3,16 +3,26 @@ description:
   title_tw: 什麼是 Blulu 量表
   link: description
   icon: info
-speech:
-  title: Speeches
-  title_tw: 演講內容
-  link: speech
-  icon: unmute
 why:
   title: Why is Blulu Developed
   title_tw: 為何開發 Blulu
   link: why
   icon: bomb
+purpose:
+  title: The Purpose of Blulu
+  title_tw: Blulu 的目的
+  link: purpose
+  icon: flag
+how:
+  title: How to Use Blulu
+  title_tw: 如何使用 Blulu
+  link: how
+  icon: configure
+speech:
+  title: Speeches
+  title_tw: 演講內容
+  link: speech
+  icon: unmute
 content:
   title: The Blulu Metrics Family
   title_tw: Blulu 量表家族

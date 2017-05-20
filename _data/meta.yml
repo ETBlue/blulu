@@ -9,10 +9,14 @@ project:
   name_tw: "Blulu 量表"
   tagline: A Rethink of the Relationship Between Web Tools and Deliberative Democracy
   tagline_tw: 重新思考網路工具與審議民主的關係
-  description: "Blulu is a framework describing the emerging relationship between deliberation, participation and information technology. Named after last names of its co-authors: Chia-Hua Lü and ETBlue." 
-  description_tw: "Blulu 是一組思考框架，用以分析審議、參與與資訊科技之間的新興關係。以兩位共同作者呂家華、藍一婷的姓氏來命名。"
+  description: "Blulu is a scaffold helps people thinking about the emerging relationship between deliberation, participation and information technology. Named after last names of its co-authors: Chia-Hua Lü and ETBlue." 
+  description_tw: "Blulu 是一組輔助思考的鷹架，用以分析審議、參與、資訊科技之間的新興關係。以兩位共同作者呂家華、藍一婷的姓氏來命名。"
   why: Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. The Taiwan Authority imported bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet, in no time, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed.
   why_tw: 自 2014 佔領立院後，數位民主風潮興起，台灣治理當局引進了許多新潮的線上與線下的參與工具，同時從公民科技社群網羅技術人才。但很快地，基於工具的洗白式開放隨之出現。為了指出暗面、激起大眾對洗白式開放的警覺，Blulu 量表就此誕生。
+  purpose: The purpose of Blulu is to provide citizens with thinking tools of open government as self-defense weapons, empowering them to evaluate the gap between the statements from government and the real situations.
+  purpose_tw: Blulu 的目的是提供思想上的防身武器，讓一般公民在開放政府的議題上，有能力判斷政府的宣稱與真實狀況是否符合。
+  how: Please spare yourself one afternoon and watch the following videos and slides. Turn the content into your own knowledge with whatever learning style you prefer, and then use it in whatever way you need. Please keep in mind that Blulu is only a scaffold that helps you build your house and should be removed as soon as the building is done. And the scaffold itself will change over time. Please digest Blulu into your own weapons and get rid of those graphics as much as possible.
+  how_tw: 請空出一個下午的時間，觀賞以下的演講錄影及簡報，以任何符合您學習風格的方式，將演講內容轉換成自己的知識，然後根據您個人的需求去自由應用。要特別強調的是，Blulu 只是一個幫助各位蓋房子用的鷹架，房子蓋好後，鷹架就應該拆掉，而且鷹架也還會一直改版，因此希望大家消化吸收後變成自己的工具，而不是被這些圖表框住。
   logo:
   cover:
   content:
@@ -24,6 +28,7 @@ project:
     - meter
     - spectrum
     - bricks
+    - gundam
 author:
   - name: "Chia-Hua Lü"
     name_tw: "呂家華"
@@ -201,7 +206,7 @@ speech:
           - Zh
           - En
       - title: Some thoughts from the speaker
-        title_tw: 講者感言
+        title_tw: 講者會後感言
         url: https://www.facebook.com/luchiahua0515/posts/10153441102061026
         language:
           - Zh
@@ -248,14 +253,25 @@ speech:
         timestamp: 13:20
         label: "13:20"
     link:
+      - title: Original Google Slides (transcripts inside)
+        title_tw: Google Slides 原始工作檔（內含逐字講稿）
+        url: https://docs.google.com/presentation/d/19GFnA_ecKmJRcNNrluilIEVByXmY4YAfOXYQmzwmJWY/edit?usp=sharing
+        language:
+          - Zh
+          - En
       - title: Online collaborative document
         title_tw: 線上協作共筆
         url: https://ocf-tw.hackpad.com/Loomio-l8fikCsKHiG
         language:
           - Zh
           - En
+      - title: The origin of Blulu
+        title_tw: Blulu 緣起
+        url: https://www.facebook.com/photo.php?fbid=10205961362685879
+        language:
+          - Zh
       - title: Some thoughts from the speaker
-        title_tw: 講者感言
+        title_tw: 講者會後感言
         url: https://www.facebook.com/ETBlue/posts/10206010200586796
         language:
           - Zh
@@ -284,7 +300,7 @@ speech:
         title_tw: 2016 年 5 月 15 日
         label: Date
         label_tw: 日期
-      - title: Academia Sinica, Taiper, Taiwan
+      - title: Academia Sinica, Taipei, Taiwan
         title_tw: 台灣國台北市，中央研究院
         label: Location
         label_tw: 地點
@@ -350,35 +366,98 @@ speech:
           - Zh
   - name: Blulu Gamma Version
     name_tw: Blulu Gamma 版
-    description: Gamma version is coming at 5/13 2017, providing thinking tools for open washing disclosure.
-    description_tw: Gamma 版本即將在 2017/5/13 發佈，提供辨別洗白式開放的思考工具。
+    description: Gamma version is released at 5/13 2017, pointing out the open washing in progress in Taiwan, as well as basic methods for open washing disclosure.
+    description_tw: Gamma 版本於 2017/5/13 發佈，指出台灣政府正在進行中的洗白式開放操作，同時提供基礎的辨別方式。
+    title: "Blulu Metrics Gamma Ver. : The Transparent Black Box"
+    title_tw: 從 Blulu (Gamma) 量表看透明的黑箱
+    subtitle: ""
+    subtitle_tw: 
     slides_language:
       - Zh
       - En
     video_language:
       - Zh
-    slides: <p class="center aligned">To Be Published</p>
-    video: <p class="center aligned">To Be Published</p>
+    slides: '<iframe src="https://docs.google.com/presentation/d/17S4TlF-nkxrLOA4voItLA8L8aQu8sxNV1CwUBFshodg/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" style="position:absolute;width:100%;height:100%;left:0"></iframe>'
+    video: '<iframe id="video_gamma" enablejsapi="true" src="https://www.youtube.com/embed/1zSVgOQ-Nnk?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
     toc_id: gamma
     meta:
+      - title: May 13, 2017
+        title_tw: 2017 年 5 月 13 日
+        label: Date
+        label_tw: 日期
+      - title: Tò-uat Books x Cafe Philo, Taipei, Taiwan
+        title_tw: 台灣國台北市，左轉有書X慕哲咖啡
+        label: Location
+        label_tw: 地點
+      - title: The Transparent Blackbox? Open Government and Civic Technology
+        title_tw: 透明的黑箱？開放政府與公民科技
+        label: Event
+        label_tw: 活動
+        url: "https://www.facebook.com/events/292265427868662/"
+      - title: Democracy Deepening in Taiwan?! Lectures Series and Conference
+        title_tw: 民主深化在臺灣？！系列講座＆研討會
+        label: Project
+        label_tw: 計畫
+        url: "https://www.facebook.com/1861119864146654/"
+      - title: Department of Public Administration, National Chengchi University & Chang Fo-Chuan Centerfor the Study of Human Rights, Soochow University
+        title_tw: 政治大學公共行政學系、東吳大學張佛泉人權中心
+        label: Host
+        label_tw: 主辦
+      - title: ETBlue
+        title_tw: 藍一婷
+        label: Speaker
+        label_tw: 講者
     toc:
-      - title: "Which force to join: technology neutrality under a political competition"
-        title_tw: 跳坑指南：政治賽局下的技術中立
-        timestamp: 
-        label: 
-      - title: "How to cowork: halo effect across domains"
-        title_tw: 挖坑指南：跨領域下的光暈效應
-        timestamp: 
-        label: 
+      - title: "Which force to join: technology neutrality under a political competition (Blulu's spectrum)"
+        title_tw: 跳坑指南：政治賽局下的技術中立（Blulu 光譜）
+        timestamp: 1:31
+        label: "1:31"
+      - title: "How to cowork: halo effect across domains (Blulu's bricks)"
+        title_tw: 挖坑指南：跨領域下的光暈效應（Blulu 磚塊）
+        timestamp: 4:19
+        label: "4:19"
       - title: "What to observe: open v.s. open washed"
         title_tw: 觀坑指南：開放透明的表與裏
-        timestamp: 
-        label: 
-      - title: Some thoughts as an ordinary citizen
-        title_tw: 結語：身為普通公民
-        timestamp: 
-        label: 
+        timestamp: 6:48
+        label: "6:48"
+      - title: "Blulu's stair: dependencies between different stages in a public policy life cycle"
+        title_tw: Blulu 階梯：公共政策形成階段之間的相依性
+        timestamp: 8:03
+        label: "8:03"
+      - title: "Blulu’s iceberg: problem and its underlying structure"
+        title_tw: "Blulu 冰山：問題與背後的結構"
+        timestamp: 11:31
+        label: "11:31"
+      - title: "Blulu’s pizza: contributor groups for a public policy"
+        title_tw: Blulu 披薩：公共政策的參與族群
+        timestamp: 14:09
+        label: "14:09"
+      - title: "Blulu’s meter: state of open participation for a policy"
+        title_tw: Blulu 測量儀：政策開放參與的程度
+        timestamp: 15:46
+        label: "15:46"
+      - title: "Some thoughts as an ordinary citizen (Blulu’s gundam)"
+        title_tw: 結語：身為普通公民（Blulu 鋼彈）
+        timestamp: 17:26
+        label: "17:26"
     link:
+      - title: Original Google Slides (transcripts inside)
+        title_tw: Google Slides 原始工作檔（內含逐字講稿）
+        url: https://docs.google.com/presentation/d/17S4TlF-nkxrLOA4voItLA8L8aQu8sxNV1CwUBFshodg/edit?usp=sharing
+        language:
+          - Zh
+          - En
+      - title: Online collaborative document
+        title_tw: 線上協作共筆
+        url: https://paper.dropbox.com/doc/2017.05.13-yJqLSDwQEJLfbJachOV4o
+        language:
+          - Zh
+      - title: Some thoughts from the speaker
+        title_tw: 講者會後感言
+        url: https://etblue.blogspot.tw/2015/12/loomio-20-blulu.html
+        language:
+          - Zh
+
 
 painting:
   - images/blulu-rushing.jpg

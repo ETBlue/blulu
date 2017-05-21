@@ -378,7 +378,7 @@ speech:
     video_language:
       - Zh
     slides: '<iframe src="https://docs.google.com/presentation/d/17S4TlF-nkxrLOA4voItLA8L8aQu8sxNV1CwUBFshodg/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0" style="position:absolute;width:100%;height:100%;left:0"></iframe>'
-    video: '<iframe id="video_gamma" enablejsapi="true" src="https://www.youtube.com/embed/1zSVgOQ-Nnk?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
+    video: '<iframe id="video_gamma" enablejsapi="true" src="https://www.youtube.com/embed/J-ijGoWQtvQ?enablejsapi=1" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>'
     toc_id: gamma
     meta:
       - title: May 13, 2017

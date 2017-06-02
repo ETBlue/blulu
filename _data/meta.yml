@@ -1,7 +1,7 @@
 site:
   name: "Blulu Metrics: A Rethink of the Relationship Between Web Tools and Deliberative Democracy"
   name_tw: Blulu 量表：重新思考網路工具與審議民主的關係
-  url: "http://blulu.tw"
+  url: "https://blulu.tw"
   cover: "/images/cover.png"
   icon: "/images/favicon.png"
 project:

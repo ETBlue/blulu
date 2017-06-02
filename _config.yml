@@ -1,4 +1,4 @@
 source: .
 destination: _deploy
-config_url: http://blulu.tw
+config_url: https://blulu.tw
 encoding: utf-8

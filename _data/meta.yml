@@ -9,13 +9,13 @@ project:
   name_tw: "Blulu 量表"
   tagline: A Rethink of the Relationship Between Web Tools and Deliberative Democracy
   tagline_tw: 重新思考網路工具與審議民主的關係
-  description: "Blulu is a scaffold helps people thinking about the emerging relationship between deliberation, participation and information technology. Named after last names of its co-authors: Chia-Hua Lü and ETBlue." 
+  description: "Blulu is a scaffold that helps people thinking about the emerging relationship between deliberation, participation and information technology. It is named after the last names of its co-authors: Chia-Hua Lü and ETBlue."
   description_tw: "Blulu 是一組輔助思考的鷹架，用以分析審議、參與、資訊科技之間的新興關係。以兩位共同作者呂家華、藍一婷的姓氏來命名。"
-  why: Since the Sunflower Movement in 2014, digital democracy became a rising star in Taiwan. The Taiwan Authority imported bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community. Yet, in no time, tools-based open washing emerged. To point out the dark side and call for public awareness of open washing, the Blulu Metrics was developed.
+  why: Digital democracy has become a rising star in Taiwan since the Sunflower Movement in 2014. The Taiwan Authority has imported a bunch of trendy online and offline participatory tools, as well as a couple of techies from the civil tech community into its administrative process. Yet, in no time, tool-based open washing emerged. Blulu Metrics was developed to point out the dark side of digital democracy, and to call for public awareness of open washing.
   why_tw: 自 2014 佔領立院後，數位民主風潮興起，台灣治理當局引進了許多新潮的線上與線下的參與工具，同時從公民科技社群網羅技術人才。但很快地，基於工具的洗白式開放隨之出現。為了指出暗面、激起大眾對洗白式開放的警覺，Blulu 量表就此誕生。
-  purpose: The purpose of Blulu is to provide citizens with thinking tools of open government as self-defense weapons, empowering them to evaluate the gap between the statements from government and the real situations.
+  purpose: The purpose of Blulu is to provide citizens with tools to think critically about open government for their own self-defense, empowering them to evaluate the gap between government statements and the real situations.
   purpose_tw: Blulu 的目的是提供思想上的防身武器，讓一般公民在開放政府的議題上，有能力判斷政府的宣稱與真實狀況是否符合。
-  how: Please spare yourself one afternoon and watch the following videos and slides. Turn the content into your own knowledge with whatever learning style you prefer, and then use it in whatever way you need. Please keep in mind that Blulu is only a scaffold that helps you build your house and should be removed as soon as the building is done. And the scaffold itself will change over time. Please digest Blulu into your own weapons and get rid of those graphics as much as possible.
+  how: Please spare yourself one afternoon and watch the following videos and slides. Turn the content into your own knowledge with whatever learning style you prefer, and then use it in whatever way you need. Please keep in mind that Blulu is only a scaffold that helps you build your house, and is better to be removed as soon as the building is completed. The scaffold itself will also change over time. Please consume the materials, digest them, and mold Blulu into your own weapons, not to be restricted by the figures and tables here.
   how_tw: 請空出一個下午的時間，觀賞以下的演講錄影及簡報，以任何符合您學習風格的方式，將演講內容轉換成自己的知識，然後根據您個人的需求去自由應用。要特別強調的是，Blulu 只是一個幫助各位蓋房子用的鷹架，房子蓋好後，鷹架就應該拆掉，而且鷹架也還會一直改版，因此希望大家消化吸收後變成自己的工具，而不是被這些圖表框住。
   logo:
   cover:
@@ -34,7 +34,7 @@ author:
     name_tw: "呂家華"
     tagline: An experienced facilitator, planner, mediator, researcher and consultant diving the professional fiion public deliberation for more than ten years.
     tagline_tw: 經驗深厚的審議主持人、規劃師、中介者、研究人員、以及顧問，在審議的領域十餘載的專業工作者。
-    description: 
+    description:
     description_tw:
     avatar:
     link:
@@ -371,7 +371,7 @@ speech:
     title: "Blulu Metrics Gamma Ver. : The Transparent Black Box"
     title_tw: 從 Blulu (Gamma) 量表看透明的黑箱
     subtitle: ""
-    subtitle_tw: 
+    subtitle_tw:
     slides_language:
       - Zh
       - En
